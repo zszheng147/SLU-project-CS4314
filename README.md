@@ -41,3 +41,6 @@
   + 强力的NLP工具库: https://stanfordnlp.github.io/stanza/
 + jieba
   + 中文分词工具: https://github.com/fxsjy/jieba
+
+### 助教提供的参考论文
++ [Supervised Sequence Labelling with Recurrent Neural Networks](https://www.cs.toronto.edu/~graves/preprint.pdf) 有点长，137页
