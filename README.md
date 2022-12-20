@@ -42,6 +42,13 @@
 + jieba
   + 中文分词工具: https://github.com/fxsjy/jieba
 
+### 助教提供了几个思考和探索的方向:
++ 对话历史该如何使用（严禁使用未来的对话来预测当前的对话）
++ 如何解决输入中的噪音问题
++ 遇到没有见过的槽值该如何解决
++ 除了序列标注方法外还有没有其他建模方式
+    + 使用分类器预测value的方法训练效果很差，大家避免在该方向上踩坑
+
 ### 助教提供的参考论文
 + [Supervised Sequence Labelling with Recurrent Neural Networks](https://www.cs.toronto.edu/~graves/preprint.pdf) 有点长，137页
 + [Slot Tagging for Task Oriented Spoken Language Understanding in Human-to-human Conversation Scenarios](https://aclanthology.org/K19-1071.pdf)
