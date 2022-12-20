@@ -56,3 +56,6 @@
 + [An End-to-end Approach for Handling Unknown Slot Values in Dialogue State Tracking](https://arxiv.org/pdf/1805.01555.pdf)
 + [Get To The Point: Summarization with Pointer-Generator Network](https://arxiv.org/pdf/1704.04368.pdf)
 + [Transferable Multi-Domain State Generator for Task-Oriented Dialogue Systems](https://arxiv.org/pdf/1905.08743.pdf)
+
+## 报告
+[SJTU-overleaf](https://latex.sjtu.edu.cn/project/63a181c215dc190097c0b28d) 已邀请
