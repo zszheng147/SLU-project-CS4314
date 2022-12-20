@@ -44,3 +44,8 @@
 
 ### 助教提供的参考论文
 + [Supervised Sequence Labelling with Recurrent Neural Networks](https://www.cs.toronto.edu/~graves/preprint.pdf) 有点长，137页
++ [Slot Tagging for Task Oriented Spoken Language Understanding in Human-to-human Conversation Scenarios](https://aclanthology.org/K19-1071.pdf)
++ [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/pdf/1409.3215.pdf)
++ [An End-to-end Approach for Handling Unknown Slot Values in Dialogue State Tracking](https://arxiv.org/pdf/1805.01555.pdf)
++ [Get To The Point: Summarization with Pointer-Generator Network](https://arxiv.org/pdf/1704.04368.pdf)
++ [Transferable Multi-Domain State Generator for Task-Oriented Dialogue Systems](https://arxiv.org/pdf/1905.08743.pdf)
