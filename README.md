@@ -1,17 +1,8 @@
-### 创建环境
-
-    conda create -n slu python=3.6
-    source activate slu
-    pip install torch==1.7.1
-
-### 运行
-    
-在根目录下运行
-
-    python scripts/slu_baseline.py
+## 需要解决的问题：
+- 文本词向量的获取（未知词的处理）、上下文语义
+- 
 
 ### 代码说明
-
 + `utils/args.py`:定义了所有涉及到的可选参数，如需改动某一参数可以在运行的时候将命令修改成
         
         python scripts/slu_baseline.py --<arg> <value>
