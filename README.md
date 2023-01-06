@@ -9,7 +9,9 @@
 | ---- | ---- | ---- |  ---- |  ---- |  ---- |  
 | original(TA) | asr_1best | BiLSTM | original | 100 | 71.3966 |
 | original(TA) | manual_transcript | BiLSTM | original | 100 | 93.1844 |
-
+| sgns.zhihu.word | manual_transcript | BiLSTM | original | 100 | 94.1899 (收敛快) |
+| sgns.zhihu.word | manual_transcript | BiLSTM | original | 100 | 93.9665 (收敛快) |
+| sgns.context.word-word.dynwin5.thr10.neg5.dim300.iter5 | manual_transcript | BiLSTM | original | 100 |  |
 
 
 ### 有关预训练语言模型
@@ -22,10 +24,6 @@
 ### 推荐使用的工具库
 + transformers
   + 使用预训练语言模型的工具库: https://huggingface.co/
-+ nltk
-  + 强力的NLP工具库: https://www.nltk.org/
-+ stanza
-  + 强力的NLP工具库: https://stanfordnlp.github.io/stanza/
 + jieba
   + 中文分词工具: https://github.com/fxsjy/jieba
 
