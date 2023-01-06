@@ -43,7 +43,7 @@ class SLUTagging(nn.Module):
             for idx, tid in enumerate(pred):
                 tag = label_vocab.convert_idx_to_tag(tid)
                 pred_tags.append(tag)
-                if (tag == 'O' or tag.startswith('B')) and len(tag_buff) > 0:
+                if (tag == 'O' or tag.startswith('B')) and len(tag_buff) > 0: # 一组BI结束了
                     slot = '-'.join(tag_buff[0].split('-')[1:])
                     value = ''.join([batch.utt[i][j] for j in idx_buff])
                     idx_buff, tag_buff = [], []

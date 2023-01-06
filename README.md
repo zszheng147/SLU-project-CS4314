@@ -1,10 +1,18 @@
 ## 需要解决的问题：
-- 中文词向量（词级别） or 预训练语言模型（句子级别的表征）
-- 模型架构的调整（biLSTM 换成 transformer）
-- 
+- [中文词向量（词级别）](https://github.com/Embedding/Chinese-Word-Vectors/blob/master/README_zh.md)之[模型](https://jbox.sjtu.edu.cn/l/a19WDe) or 预训练语言模型（句子级别的表征）
+- 模型架构的调整（biLSTM 换成 transformer）、BiLSTM参数优化（油水少）
+- ASR结果优化模块
+- 解码模块换成CTC
+
+## 训练结果
+| 词向量 | 文本输入 | 模型 | 解码模块 | 训练轮数 | Dev acc |
+| ---- | ---- | ---- |  ---- |  ---- |  ---- |  
+| original(TA) | asr_1best | BiLSTM | original | 100 | 71.3966 |
+| original(TA) | manual_transcript | BiLSTM | original | 100 | 93.1844 |
+
+
 
 ### 有关预训练语言模型
-
 本次代码中没有加入有关预训练语言模型的代码，如需使用预训练语言模型我们推荐使用下面几个预训练模型，若使用预训练语言模型，不要使用large级别的模型
 + Bert: https://huggingface.co/bert-base-chinese
 + Bert-WWM: https://huggingface.co/hfl/chinese-bert-wwm-ext
