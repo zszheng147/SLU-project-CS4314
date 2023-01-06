@@ -33,10 +33,10 @@ class SLUTagging(nn.Module):
     def decode(self, label_vocab, batch):
         batch_size = len(batch)
         labels = batch.labels
-        prob, loss = self.forward(batch)
+        prob, loss = self.forward(batch) # bsz * seqlen * [BIO]
         predictions = []
         for i in range(batch_size):
-            pred = torch.argmax(prob[i], dim=-1).cpu().tolist()
+            pred = torch.argmax(prob[i], dim=-1).cpu().tolist() # 预测的类型 [BIO]
             pred_tuple = []
             idx_buff, tag_buff, pred_tags = [], [], []
             pred = pred[:len(batch.utt[i])]
@@ -63,7 +63,7 @@ class SLUTagging(nn.Module):
 
 
 class TaggingFNNDecoder(nn.Module):
-
+    # 线性层输出 算交叉熵
     def __init__(self, input_size, num_tags, pad_id):
         super(TaggingFNNDecoder, self).__init__()
         self.num_tags = num_tags

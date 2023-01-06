@@ -8,10 +8,10 @@ class Example():
 
     @classmethod
     def configuration(cls, root, train_path=None, word2vec_path=None):
-        cls.evaluator = Evaluator()
+        cls.evaluator = Evaluator() # 评价
         cls.word_vocab = Vocab(padding=True, unk=True, filepath=train_path)
-        cls.word2vec = Word2vecUtils(word2vec_path)
-        cls.label_vocab = LabelVocab(root)
+        cls.word2vec = Word2vecUtils(word2vec_path) # 词向量
+        cls.label_vocab = LabelVocab(root) # ['B', 'I', 'O', '<pad>']
 
     @classmethod
     def load_dataset(cls, data_path):
