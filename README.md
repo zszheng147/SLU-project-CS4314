@@ -5,13 +5,13 @@
 - 解码模块换成CTC
 
 ## 训练结果
-| 词向量 | 文本输入 | 模型 | 解码模块 | 训练轮数 | Dev acc |
+| 词向量 | 文本输入 | 模型 | 解码模块 | 收敛轮数 | Dev acc |
 | ---- | ---- | ---- |  ---- |  ---- |  ---- |  
-| original(TA) | asr_1best | BiLSTM | original | 100 | 71.3966 |
-| original(TA) | manual_transcript | BiLSTM | original | 100 | 93.1844 |
-| sgns.zhihu.word | manual_transcript | BiLSTM | original | 100 | 94.1899 (收敛快) |
-| sgns.zhihu.word | manual_transcript | BiLSTM | original | 100 | 93.9665 (收敛快) |
-| sgns.context.word-word.dynwin5.thr10.neg5.dim300.iter5 | manual_transcript | BiLSTM | original | 100 |  |
+| original(TA) | asr_1best | BiLSTM | original | ? | 71.3966 |
+| original(TA) | manual_transcript | BiLSTM | original | 87 | 93.1844 |
+| sgns.zhihu.word | manual_transcript | BiLSTM | original | 48 | 94.1899  |
+| sgns.zhihu.bigram-char | manual_transcript | BiLSTM | original | 40 | 93.9665  |
+| sgns.context.word-word.dynwin5.thr10.neg5.dim300.iter5 | manual_transcript | BiLSTM | original | 8 | 93.0726 |
 
 
 ### 有关预训练语言模型

@@ -758,13 +758,13 @@
     [
         {
             "utt_id": 1,
-            "manual_transcript": "导到锦州世博园",
-            "asr_1best": "导航到锦州世博园",
+            "manual_transcript": "导航到锦州世博园",
+            "asr_1best": "导到锦州世博园",
             "semantic": [
                 [
                     "inform",
                     "操作",
-                    "导"
+                    "导航"
                 ],
                 [
                     "inform",

@@ -1,5 +1,7 @@
 #coding=utf8
 import os, json
+import jieba
+
 PAD = '<pad>'
 UNK = '<unk>'
 BOS = '<s>'
@@ -29,10 +31,12 @@ class Vocab():
         for data in trains:
             for utt in data:
                 text = utt['manual_transcript']
-                for char in text:
-                    word_freq[char] = word_freq.get(char, 0) + 1
+                #! use result from jieba instead of single word
+                seg_list = list(jieba.cut(text, cut_all=False))
+                for subword in seg_list:
+                    word_freq[subword] = word_freq.get(subword, 0) + 1
         for word in word_freq:
-            if word_freq[word] >= min_freq:
+            if word_freq[word] >= min_freq: # threshold could be changed
                 idx = len(self.word2id)
                 self.word2id[word], self.id2word[idx] = idx, word
 
