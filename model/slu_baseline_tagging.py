@@ -11,7 +11,9 @@ class SLUTagging(nn.Module):
         self.config = config
         self.cell = config.encoder_cell
         self.word_embed = nn.Embedding(config.vocab_size, config.embed_size, padding_idx=0)
+        # self.fc = nn.Linear(config.vocab_embed_size, config.embed_size)
         self.rnn = getattr(nn, self.cell)(config.embed_size, config.hidden_size // 2, num_layers=config.num_layer, bidirectional=True, batch_first=True)
+        # self.transformer = nn.TransformerEncoder #!
         self.dropout_layer = nn.Dropout(p=config.dropout)
         self.output_layer = TaggingFNNDecoder(config.hidden_size, config.num_tags, config.tag_pad_idx)
 
@@ -21,7 +23,8 @@ class SLUTagging(nn.Module):
         input_ids = batch.input_ids
         lengths = batch.lengths
 
-        embed = self.word_embed(input_ids)
+        # embed = nn.Dropout(0.05)(self.fc(self.word_embed(input_ids)))
+        embed = self.word_embed(input_ids) 
         packed_inputs = rnn_utils.pack_padded_sequence(embed, lengths, batch_first=True, enforce_sorted=True)
         packed_rnn_out, h_t_c_t = self.rnn(packed_inputs)  # bsize x seqlen x dim
         rnn_out, unpacked_len = rnn_utils.pad_packed_sequence(packed_rnn_out, batch_first=True)

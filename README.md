@@ -2,7 +2,9 @@
 - [中文词向量（词级别）](https://github.com/Embedding/Chinese-Word-Vectors/blob/master/README_zh.md)之[模型](https://jbox.sjtu.edu.cn/l/a19WDe) or 预训练语言模型（句子级别的表征）
 - 模型架构的调整（biLSTM 换成 transformer）、BiLSTM参数优化（油水少）
 - ASR结果优化模块
-- 解码模块换成CTC
+- 解码模块换成CTC, 强制对齐
+- 文本数据加噪
+- asr和人工标注的数据训练顺序
 
 ## 训练结果
 | 词向量 | 文本输入 | 模型 | 解码模块 | 收敛轮数 | Dev acc |
