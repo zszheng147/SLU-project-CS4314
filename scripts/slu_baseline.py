@@ -65,8 +65,8 @@ def decode(choice):
             total_loss += loss
             count += 1
         metrics = Example.evaluator.acc(predictions, labels)
-    torch.cuda.empty_cache()
-    gc.collect()
+    # torch.cuda.empty_cache() # if use, it will trigger GPU device problem
+    # gc.collect()
     return metrics, total_loss / count
 
 
@@ -93,8 +93,8 @@ if not args.testing:
             optimizer.zero_grad()
             count += 1
         print('Training: \tEpoch: %d\tTime: %.4f\tTraining Loss: %.4f' % (i, time.time() - start_time, epoch_loss / count))
-        torch.cuda.empty_cache()
-        gc.collect()
+        # torch.cuda.empty_cache()
+        # gc.collect()
 
         start_time = time.time()
         metrics, dev_loss = decode('dev')
