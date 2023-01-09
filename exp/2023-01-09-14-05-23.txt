@@ -1,0 +1,25 @@
+Initialization finished ...
+Random seed is set to 999
+Use GPU with index 0
+Load dataset and database finished, cost 3.4555s ...
+Dataset size: train -> 5115 ; dev -> 895
+Total training steps: 16000
+Start training ......
+Training: 	Epoch: 0	Time: 10.4897	Training Loss: 0.9501
+Evaluation: 	Epoch: 0	Time: 0.4096	Dev acc: 75.64	Dev fscore(p/r/f): (76.41/76.33/76.37)
+NEW BEST MODEL: 	Epoch: 0	Dev loss: 0.3559	Dev acc: 75.64	Dev fscore(p/r/f): (76.41/76.33/76.37)
+Training: 	Epoch: 1	Time: 8.9510	Training Loss: 0.3029
+Evaluation: 	Epoch: 1	Time: 0.3721	Dev acc: 83.24	Dev fscore(p/r/f): (83.05/82.79/82.92)
+NEW BEST MODEL: 	Epoch: 1	Dev loss: 0.2225	Dev acc: 83.24	Dev fscore(p/r/f): (83.05/82.79/82.92)
+Training: 	Epoch: 2	Time: 9.6419	Training Loss: 0.2052
+Evaluation: 	Epoch: 2	Time: 0.4171	Dev acc: 84.36	Dev fscore(p/r/f): (83.85/83.94/83.90)
+NEW BEST MODEL: 	Epoch: 2	Dev loss: 0.1926	Dev acc: 84.36	Dev fscore(p/r/f): (83.85/83.94/83.90)
+Training: 	Epoch: 3	Time: 9.4984	Training Loss: 0.1477
+Evaluation: 	Epoch: 3	Time: 0.4358	Dev acc: 86.37	Dev fscore(p/r/f): (86.76/86.76/86.76)
+NEW BEST MODEL: 	Epoch: 3	Dev loss: 0.1505	Dev acc: 86.37	Dev fscore(p/r/f): (86.76/86.76/86.76)
+Training: 	Epoch: 4	Time: 9.8038	Training Loss: 0.1162
+Evaluation: 	Epoch: 4	Time: 0.4146	Dev acc: 86.82	Dev fscore(p/r/f): (85.70/88.11/86.89)
+NEW BEST MODEL: 	Epoch: 4	Dev loss: 0.1508	Dev acc: 86.82	Dev fscore(p/r/f): (85.70/88.11/86.89)
+Training: 	Epoch: 5	Time: 9.8730	Training Loss: 0.0917
+Evaluation: 	Epoch: 5	Time: 0.4179	Dev acc: 86.93	Dev fscore(p/r/f): (86.06/88.22/87.13)
+NEW BEST MODEL: 	Epoch: 5	Dev loss: 0.1662	Dev acc: 86.93	Dev fscore(p/r/f): (86.06/88.22/87.13)

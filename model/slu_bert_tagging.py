@@ -28,7 +28,7 @@ class SLUTaggingBERT(nn.Module):
         trans_output=self.transformer(input_ids)
         hidden=trans_output["last_hidden_state"]
         output=trans_output["pooler_output"]
-        print(hidden.shape,output.shape)
+        # print(hidden.shape,output.shape)
         # embed = nn.Dropout(0.05)(self.fc(self.word_embed(input_ids)))
         # embed = self.word_embed(input_ids)
 
@@ -36,7 +36,7 @@ class SLUTaggingBERT(nn.Module):
         # packed_rnn_out, h_t_c_t = self.rnn(packed_inputs)  # bsize x seqlen x dim
         # rnn_out, unpacked_len = rnn_utils.pad_packed_sequence(packed_rnn_out, batch_first=True)
         # hiddens = self.dropout_layer(rnn_out)
-        # tag_output = self.output_layer(hiddens, tag_mask, tag_ids)
+        tag_output = self.output_layer(hidden, tag_mask, tag_ids)
 
         return tag_output
 
@@ -81,7 +81,9 @@ class TaggingFNNDecoder(nn.Module):
         self.loss_fct = nn.CrossEntropyLoss(ignore_index=pad_id)
 
     def forward(self, hiddens, mask, labels=None):
+        
         logits = self.output_layer(hiddens)
+        # print(logits.shape,"logits",mask.shape,"mask",self.num_tags)
         logits += (1 - mask).unsqueeze(-1).repeat(1, 1, self.num_tags) * -1e32
         prob = torch.softmax(logits, dim=-1)
         if labels is not None:

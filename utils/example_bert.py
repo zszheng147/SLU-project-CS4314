@@ -9,12 +9,12 @@ from transformers import BertTokenizer, BertModel
 class Example():
 
     @classmethod
-    def configuration(cls, root, train_path=None, word2vec_path=None):
+    def configuration(cls, root, train_path=None, word2vec_path=None,tokenizer_name=None):
         cls.evaluator = Evaluator() # 评价
         cls.word_vocab = Vocab(padding=True, unk=True, filepath=train_path)
         cls.word2vec = Word2vecUtils(word2vec_path) # 词向量
         cls.label_vocab = LabelVocab(root) # ['B', 'I', 'O', '<pad>']
-        cls.tokenizer = BertTokenizer.from_pretrained("hfl/chinese-lert-base")
+        cls.tokenizer = BertTokenizer.from_pretrained(tokenizer_name)
 
     @classmethod
     def load_dataset(cls, data_path):
@@ -49,18 +49,16 @@ class Example():
                 self.tags[bidx] = f'B-{slot}'
         self.slotvalue = [f'{slot}-{value}' for slot, value in self.slot.items()]
         
-        self.input_idx = [Example.word_vocab[c] for c in self.utt]
-        # Use a regular expression to find all non-Chinese characters
+        # self.input_idx_ori = [Example.word_vocab[c] for c in self.utt]
+        
+        
         non_chinese = re.findall(r'[^\u4e00-\u9fff]', self.utt)
-
         # Insert a space before each non-Chinese character
         for c in non_chinese:
             self.utt = self.utt.replace(c, " " + c)
-        self.input_idx_new = Example.tokenizer(self.utt)["input_ids"][1:-1]
-        if len(self.input_idx)!=len(self.input_idx_new):
-            print(len(self.input_idx),len(self.input_idx_new))
-            print(self.utt,self.input_idx,self.input_idx_new)
-
+        
+        self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
+        # print(self.utt,self.input_idx_ori,self.input_idx) #bert tokenizer will pad <sos> and <eos>
         l = Example.label_vocab
         self.tag_id = [l.convert_tag_to_idx(tag) for tag in self.tags]
     #     utt_seg = list(jieba.cut(self.utt))

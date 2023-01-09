@@ -25,12 +25,14 @@ class SLUTagging(nn.Module):
 
         # embed = nn.Dropout(0.05)(self.fc(self.word_embed(input_ids)))
         embed = self.word_embed(input_ids) 
+        # print(embed.shape,"embed shape")
         packed_inputs = rnn_utils.pack_padded_sequence(embed, lengths, batch_first=True, enforce_sorted=True)
         packed_rnn_out, h_t_c_t = self.rnn(packed_inputs)  # bsize x seqlen x dim
         rnn_out, unpacked_len = rnn_utils.pad_packed_sequence(packed_rnn_out, batch_first=True)
         hiddens = self.dropout_layer(rnn_out)
+        print(hiddens.shape,"hiddens") #(32 47 512)
         tag_output = self.output_layer(hiddens, tag_mask, tag_ids)
-
+        # print(tag_output.shape,"tagout")
         return tag_output
 
     def decode(self, label_vocab, batch):

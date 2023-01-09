@@ -46,3 +46,8 @@
 
 ## 报告
 [SJTU-overleaf](https://latex.sjtu.edu.cn/project/63a181c215dc190097c0b28d) 已邀请
+
+
+## PS
+
+预训练BERT lr需要设置在1e-4以下
