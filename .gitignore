@@ -1,2 +1,3 @@
 *.bin
 word2vec-768.txt
+__pycache__
