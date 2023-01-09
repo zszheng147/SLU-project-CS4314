@@ -65,7 +65,7 @@ def decode(choice):
             total_loss += loss
             count += 1
         metrics = Example.evaluator.acc(predictions, labels)
-    # torch.cuda.empty_cache()
+    # torch.cuda.empty_cache() # if use, it will trigger GPU device problem
     # gc.collect()
     return metrics, total_loss / count
 
