@@ -4,6 +4,7 @@ import jieba
 from utils.vocab import Vocab, LabelVocab
 from utils.word2vec import Word2vecUtils
 from utils.evaluator import Evaluator
+from transformers import BertTokenizer, BertModel
 
 class Example():
 
@@ -13,6 +14,7 @@ class Example():
         cls.word_vocab = Vocab(padding=True, unk=True, filepath=train_path)
         cls.word2vec = Word2vecUtils(word2vec_path) # 词向量
         cls.label_vocab = LabelVocab(root) # ['B', 'I', 'O', '<pad>']
+        cls.tokenizer = BertTokenizer.from_pretrained("hfl/chinese-lert-base")
 
     @classmethod
     def load_dataset(cls, data_path):
@@ -24,6 +26,8 @@ class Example():
                 examples.append(ex)
         return examples
     
+
+
     def __init__(self, ex: dict):
         super(Example, self).__init__()
         self.ex = ex
@@ -44,7 +48,11 @@ class Example():
                 self.tags[bidx: bidx + len(value)] = [f'I-{slot}'] * len(value)
                 self.tags[bidx] = f'B-{slot}'
         self.slotvalue = [f'{slot}-{value}' for slot, value in self.slot.items()]
-        self.input_idx = [Example.word_vocab[c] for c in self.utt]
+        
+        # self.input_idx = [Example.word_vocab[c] for c in self.utt]
+        
+        self.input_idx = Example.tokenizer(self.utt)["input_ids"]
+        
         l = Example.label_vocab
         self.tag_id = [l.convert_tag_to_idx(tag) for tag in self.tags]
     #     utt_seg = list(jieba.cut(self.utt))
