@@ -15,20 +15,35 @@ from model.slu_bert_tagging import SLUTaggingBERT
 
 import logging
 
+
+
+# initialization params, output path, logger, random seed and torch.device
+args = init_args(sys.argv[1:])
+set_random_seed(args.seed)
+device = set_torch_device(args.device)
+print("Initialization finished ...")
+print("Random seed is set to %d" % (args.seed))
+print("Use GPU with index %s" % (args.device) if args.device >= 0 else "Use CPU as target torch device")
+
+start_time = time.time()
+train_path = os.path.join(args.dataroot, 'train.json')
+dev_path = os.path.join(args.dataroot, 'development.json')
+model_name=args.model_name
+
+
+###set logger begin
+
 # Set the logging level
 logging.basicConfig(level=logging.INFO)
 
 # Get the logger
 logger = logging.getLogger(__name__)
 
-
-
-
 # Get the current time
-now = time.strftime("%Y-%m-%d-%H-%M-%S", time.gmtime())
+now = time.strftime("%m-%d %H:%M", time.gmtime())
 
 # Define the file path
-file_path = os.path.join("exp", now + ".txt")
+file_path = os.path.join("exp", now + model_name.split('/')[-1] + str(args.lr)+".txt")
 
 # Check if the directory exists
 if not os.path.exists(os.path.dirname(file_path)):
@@ -40,19 +55,9 @@ if not os.path.exists(os.path.dirname(file_path)):
 fh = logging.FileHandler(file_path)
 logger.addHandler(fh)
 
+###set logger end
 
-# initialization params, output path, logger, random seed and torch.device
-args = init_args(sys.argv[1:])
-set_random_seed(args.seed)
-device = set_torch_device(args.device)
-logger.info("Initialization finished ...")
-logger.info("Random seed is set to %d" % (args.seed))
-logger.info("Use GPU with index %s" % (args.device) if args.device >= 0 else "Use CPU as target torch device")
 
-start_time = time.time()
-train_path = os.path.join(args.dataroot, 'train.json')
-dev_path = os.path.join(args.dataroot, 'development.json')
-model_name=args.model_name
 logger.info("Use pretrained model: ",model_name)
 Example.configuration(args.dataroot, train_path=train_path, word2vec_path=args.word2vec_path,tokenizer_name=model_name)
 train_dataset = Example.load_dataset(train_path)

@@ -17,7 +17,7 @@ class SLUTaggingBERT(nn.Module):
         self.dropout_layer = nn.Dropout(p=config.dropout)
         self.output_layer = TaggingFNNDecoder(config.hidden_size, config.num_tags, config.tag_pad_idx)
         # self.tokenizer=BertTokenizer.from_pretrained("hfl/chinese-lert-base")
-        self.transformer=BertModel.from_pretrained("hfl/chinese-lert-base")
+        self.transformer=BertModel.from_pretrained(config.model_name)
 
     def forward(self, batch):
         tag_ids = batch.tag_ids
