@@ -38,8 +38,8 @@ class Example():
         super(Example, self).__init__()
         self.ex = ex
         
-        # self.utt = ex['manual_transcript']
-        self.utt = ex['asr_1best']
+        self.utt = ex['manual_transcript']
+        # self.utt = ex['asr_1best']
         self.slot = {}
         for label in ex['semantic']:
             act_slot = f'{label[0]}-{label[1]}'
@@ -61,13 +61,27 @@ class Example():
         # self.input_idx_ori = [Example.word_vocab[c] for c in self.utt]
         
         
-        non_chinese = re.findall(r'[^\u4e00-\u9fff]', self.utt)
+        # non_chinese = ("(side)","(unknown)","(robot)","(dialect)")
         # Insert a space before each non-Chinese character
-        for c in non_chinese:
-            self.utt = self.utt.replace(c, " " + c)
-        
+        self.utt_ori=self.utt
+
+        replace_dict = {"(side)":"未知话语两侧", "(unknown)":"未知未知未知的内容", "(robot)":"未知的机器内容", "(dialect)":"未知未知的方言内容", "(noise)":"未知的噪声内容"," ":"空"
+                } #"ok":"ok "*2, "ktv":"ktv "*3, "hi":"hi "*2, "beyond":"beyond "*6
+
+        # 对奇怪字符的处理
+        for key, value in replace_dict.items():
+            self.utt = self.utt.replace(key, value)
+
+        # 对英文分词的处理 （逐字符与逐单词不符）
+        words = set(re.findall(r'[a-zA-Z]+', self.utt))
+        for word in words:
+            replacement = (word+' ') * len(word)
+            self.utt = self.utt.replace(word, replacement)
+
         self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
-        # print(self.utt,self.input_idx_ori,self.input_idx) #bert tokenizer will pad <sos> and <eos>
+        
+        assert len(self.utt_ori) == len(self.input_idx), f"Mismatch in length: {self.utt_ori} {self.input_idx}"
+
         l = Example.label_vocab
         self.tag_id = [l.convert_tag_to_idx(tag) for tag in self.tags]
 

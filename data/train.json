@@ -758,13 +758,13 @@
     [
         {
             "utt_id": 1,
-            "manual_transcript": "导航到锦州世博园",
-            "asr_1best": "导到锦州世博园",
+            "manual_transcript": "导到锦州世博园",
+            "asr_1best": "导航到锦州世博园",
             "semantic": [
                 [
                     "inform",
                     "操作",
-                    "导航"
+                    "导"
                 ],
                 [
                     "inform",
@@ -7172,6 +7172,20 @@
                     "inform",
                     "poi名称",
                     "赣州市南康区"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "麻烦到世纪城mk ktv",
+            "asr_1best": "麻烦到世纪城MK KTV",
+            "semantic": [
+                [
+                    "inform",
+                    "终点名称",
+                    "世纪城mk ktv"
                 ]
             ]
         }
@@ -25126,6 +25140,20 @@
     [
         {
             "utt_id": 1,
+            "manual_transcript": "晋江s m广场",
+            "asr_1best": "晋江S M广场",
+            "semantic": [
+                [
+                    "inform",
+                    "poi名称",
+                    "晋江s m广场"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
             "manual_transcript": "导航到恒大(unknown)",
             "asr_1best": "导航到恒大名珠兰",
             "semantic": [
@@ -30850,6 +30878,18 @@
                     "七冲"
                 ]
             ]
+        },
+        {
+            "utt_id": 10,
+            "manual_transcript": "i love you",
+            "asr_1best": "HELLO鹦鹉",
+            "semantic": []
+        },
+        {
+            "utt_id": 11,
+            "manual_transcript": "小明i love you",
+            "asr_1best": "小米ILOVEYOU",
+            "semantic": []
         },
         {
             "utt_id": 12,

@@ -35,7 +35,7 @@ class SLUTaggingBERT(nn.Module):
 
         tag_output,tag_loss = self.output_layer(hidden, tag_mask, tag_ids)
 
-        loss=3*sep_loss+tag_loss
+        loss=sep_loss+tag_loss
 
         return tag_output, loss, sep_loss, tag_loss
 
