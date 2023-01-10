@@ -1,0 +1,13 @@
+Load dataset and database finished, cost 3.2205s ...
+Dataset size: train -> 5115 ; dev -> 895
+Total training steps: 16000
+Start training ......
+Training: 	Epoch: 0	Time: 20.1507	Training Loss: 2.0337
+Evaluation: 	Epoch: 0	Time: 0.6330	Dev acc: 39.55	Dev fscore(p/r/f): (26.46/24.09/25.22)
+NEW BEST MODEL: 	Epoch: 0	Dev loss: 1.3056	Dev acc: 39.55	Dev fscore(p/r/f): (26.46/24.09/25.22)
+Training: 	Epoch: 1	Time: 22.9973	Training Loss: 1.0511
+Evaluation: 	Epoch: 1	Time: 0.6683	Dev acc: 68.27	Dev fscore(p/r/f): (72.60/63.82/67.92)
+NEW BEST MODEL: 	Epoch: 1	Dev loss: 0.9253	Dev acc: 68.27	Dev fscore(p/r/f): (72.60/63.82/67.92)
+Training: 	Epoch: 2	Time: 21.7018	Training Loss: 0.7523
+Evaluation: 	Epoch: 2	Time: 0.6449	Dev acc: 69.61	Dev fscore(p/r/f): (73.71/68.40/70.96)
+NEW BEST MODEL: 	Epoch: 2	Dev loss: 0.7338	Dev acc: 69.61	Dev fscore(p/r/f): (73.71/68.40/70.96)

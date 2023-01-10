@@ -29,21 +29,18 @@ start_time = time.time()
 train_path = os.path.join(args.dataroot, 'train.json')
 dev_path = os.path.join(args.dataroot, 'development.json')
 model_name=args.model_name
-
+info=args.info
 
 ###set logger begin
 
 # Set the logging level
 logging.basicConfig(level=logging.INFO)
-
 # Get the logger
 logger = logging.getLogger(__name__)
-
 # Get the current time
 now = time.strftime("%m-%d %H:%M", time.gmtime())
-
 # Define the file path
-file_path = os.path.join("exp", now + model_name.split('/')[-1] + str(args.lr)+".txt")
+file_path = os.path.join("exp", now + model_name.split('/')[-1] + str(args.lr) + " info "+info+" .txt")
 
 # Check if the directory exists
 if not os.path.exists(os.path.dirname(file_path)):

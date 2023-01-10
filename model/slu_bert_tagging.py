@@ -1,23 +1,18 @@
 #coding=utf8
 import torch
 import torch.nn as nn
-import torch.nn.utils.rnn as rnn_utils
-from transformers import BertTokenizer, BertModel
+from transformers import  BertModel
 
 class SLUTaggingBERT(nn.Module):
 
     def __init__(self, config):
         super(SLUTaggingBERT, self).__init__()
         self.config = config
-        self.cell = config.encoder_cell
         self.word_embed = nn.Embedding(config.vocab_size, config.embed_size, padding_idx=0)
-        # self.fc = nn.Linear(config.vocab_embed_size, config.embed_size)
-        # self.rnn = getattr(nn, self.cell)(config.embed_size, config.hidden_size // 2, num_layers=config.num_layer, bidirectional=True, batch_first=True)
-        # self.transformer = nn.TransformerEncoder #!
         self.dropout_layer = nn.Dropout(p=config.dropout)
         self.output_layer = TaggingFNNDecoder(config.hidden_size, config.num_tags, config.tag_pad_idx)
-        # self.tokenizer=BertTokenizer.from_pretrained("hfl/chinese-lert-base")
         self.transformer=BertModel.from_pretrained(config.model_name)
+        # self.decoder=BertModel.from_pretrained(config.model_name,is_decoder=True,add_cross_attention=True)
 
     def forward(self, batch):
         tag_ids = batch.tag_ids
@@ -27,15 +22,13 @@ class SLUTaggingBERT(nn.Module):
 
         trans_output=self.transformer(input_ids)
         hidden=trans_output["last_hidden_state"]
-        output=trans_output["pooler_output"]
-        # print(hidden.shape,output.shape)
-        # embed = nn.Dropout(0.05)(self.fc(self.word_embed(input_ids)))
-        # embed = self.word_embed(input_ids)
 
-        # packed_inputs = rnn_utils.pack_padded_sequence(embed, lengths, batch_first=True, enforce_sorted=True)
-        # packed_rnn_out, h_t_c_t = self.rnn(packed_inputs)  # bsize x seqlen x dim
-        # rnn_out, unpacked_len = rnn_utils.pad_packed_sequence(packed_rnn_out, batch_first=True)
-        # hiddens = self.dropout_layer(rnn_out)
+        # decoder_out=self.decoder(input_ids,encoder_hidden_states=hidden)
+        # hidden=decoder_out["last_hidden_state"]
+
+        # output=trans_output["pooler_output"]
+        # print(hidden.shape,output.shape,input_ids.shape)
+
         tag_output = self.output_layer(hidden, tag_mask, tag_ids)
 
         return tag_output
@@ -77,7 +70,9 @@ class TaggingFNNDecoder(nn.Module):
     def __init__(self, input_size, num_tags, pad_id):
         super(TaggingFNNDecoder, self).__init__()
         self.num_tags = num_tags
-        self.output_layer = nn.Linear(input_size, num_tags)
+        # self.output_layer = nn.Linear(input_size, num_tags)
+        self.output_layer=nn.Sequential(nn.Linear(input_size, input_size),
+                                              nn.Tanh(), nn.Linear(input_size, num_tags))
         self.loss_fct = nn.CrossEntropyLoss(ignore_index=pad_id)
 
     def forward(self, hiddens, mask, labels=None):
