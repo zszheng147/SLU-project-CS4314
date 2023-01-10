@@ -10,33 +10,39 @@ class SLUTaggingBERT(nn.Module):
         self.config = config
         self.word_embed = nn.Embedding(config.vocab_size, config.embed_size, padding_idx=0)
         self.dropout_layer = nn.Dropout(p=config.dropout)
-        self.output_layer = TaggingFNNDecoder(config.hidden_size, config.num_tags, config.tag_pad_idx)
+        self.output_layer = TaggingFNNDecoder(config.hidden_size, config.num_tags, config.tag_pad_idx,num_layers=1)
         self.transformer=BertModel.from_pretrained(config.model_name)
-        # self.decoder=BertModel.from_pretrained(config.model_name,is_decoder=True,add_cross_attention=True)
-
+        self.sep_layer=TaggingFNNDecoder(config.hidden_size, 4, config.tag_pad_idx)
+        self.decoder=BertModel.from_pretrained(config.model_name,is_decoder=True,add_cross_attention=True)
+        
+    
     def forward(self, batch):
         tag_ids = batch.tag_ids
+        sep_tag_ids=batch.sep_tag_ids
         tag_mask = batch.tag_mask
         input_ids = batch.input_ids
         lengths = batch.lengths
-
+        
         trans_output=self.transformer(input_ids)
-        hidden=trans_output["last_hidden_state"]
+        trans_hidden=trans_output["last_hidden_state"]
 
-        # decoder_out=self.decoder(input_ids,encoder_hidden_states=hidden)
-        # hidden=decoder_out["last_hidden_state"]
+        _ , sep_loss=self.sep_layer(trans_hidden, tag_mask,sep_tag_ids)
+        
+        decoder_out=self.decoder(input_ids,encoder_hidden_states=trans_hidden)
+        hidden=decoder_out["last_hidden_state"]
 
-        # output=trans_output["pooler_output"]
         # print(hidden.shape,output.shape,input_ids.shape)
 
-        tag_output = self.output_layer(hidden, tag_mask, tag_ids)
+        tag_output,tag_loss = self.output_layer(hidden, tag_mask, tag_ids)
 
-        return tag_output
+        loss=3*sep_loss+tag_loss
+
+        return tag_output, loss, sep_loss, tag_loss
 
     def decode(self, label_vocab, batch):
         batch_size = len(batch)
         labels = batch.labels
-        prob, loss = self.forward(batch) # bsz * seqlen * [BIO]
+        prob, loss, sep_loss, tag_loss = self.forward(batch) # bsz * seqlen * [BIO]
         predictions = []
         for i in range(batch_size):
             pred = torch.argmax(prob[i], dim=-1).cpu().tolist() # 预测的类型 [BIO]
@@ -67,11 +73,13 @@ class SLUTaggingBERT(nn.Module):
 
 class TaggingFNNDecoder(nn.Module):
     # 线性层输出 算交叉熵
-    def __init__(self, input_size, num_tags, pad_id):
+    def __init__(self, input_size, num_tags, pad_id, num_layers=1):
         super(TaggingFNNDecoder, self).__init__()
         self.num_tags = num_tags
-        # self.output_layer = nn.Linear(input_size, num_tags)
-        self.output_layer=nn.Sequential(nn.Linear(input_size, input_size),
+        if num_layers==1:
+            self.output_layer = nn.Linear(input_size, num_tags)
+        else:
+            self.output_layer=nn.Sequential(nn.Linear(input_size, input_size),
                                               nn.Tanh(), nn.Linear(input_size, num_tags))
         self.loss_fct = nn.CrossEntropyLoss(ignore_index=pad_id)
 
@@ -85,3 +93,4 @@ class TaggingFNNDecoder(nn.Module):
             loss = self.loss_fct(logits.view(-1, logits.shape[-1]), labels.view(-1))
             return prob, loss
         return prob
+

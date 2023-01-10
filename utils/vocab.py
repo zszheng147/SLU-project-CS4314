@@ -56,17 +56,19 @@ class Vocab():
 
 class LabelVocab():
 
-    def __init__(self, root):
+    def __init__(self, root, extend=False):
         self.tag2idx, self.idx2tag = {}, {}
 
         self.tag2idx[PAD] = 0
         self.idx2tag[0] = PAD
         self.tag2idx['O'] = 1
         self.idx2tag[1] = 'O'
+        self.extend=extend
         self.from_filepath(root)
 
     def from_filepath(self, root):
         ontology = json.load(open(os.path.join(root, 'ontology.json'), 'r'))
+        
         acts = ontology['acts']
         slots = ontology['slots']
 
@@ -76,6 +78,18 @@ class LabelVocab():
                     idx = len(self.tag2idx)
                     tag = f'{bi}-{act}-{slot}'
                     self.tag2idx[tag], self.idx2tag[idx] = idx, tag
+
+        if self.extend:
+            ontology_cais = json.load(open(os.path.join(root, 'ontology_cais.json'), 'r'))
+            acts = ontology_cais['acts']
+            slots = ontology_cais['slots']
+
+            for act in acts:
+                for slot in slots:
+                    for bi in ['B', 'I']:
+                        idx = len(self.tag2idx)
+                        tag = f'{bi}-{act}-{slot}'
+                        self.tag2idx[tag], self.idx2tag[idx] = idx, tag
 
     def convert_tag_to_idx(self, tag):
         return self.tag2idx[tag]

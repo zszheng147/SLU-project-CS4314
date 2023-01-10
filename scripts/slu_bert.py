@@ -15,7 +15,7 @@ from model.slu_bert_tagging import SLUTaggingBERT
 
 import logging
 
-
+debug0=False #whether to extend training dataset
 
 # initialization params, output path, logger, random seed and torch.device
 args = init_args(sys.argv[1:])
@@ -27,6 +27,10 @@ print("Use GPU with index %s" % (args.device) if args.device >= 0 else "Use CPU 
 
 start_time = time.time()
 train_path = os.path.join(args.dataroot, 'train.json')
+if debug0:
+    train_path_cais = os.path.join(args.dataroot, 'train_cais.json')
+else:
+    train_path_cais = None
 dev_path = os.path.join(args.dataroot, 'development.json')
 model_name=args.model_name
 info=args.info
@@ -56,8 +60,8 @@ logger.addHandler(fh)
 
 
 logger.info("Use pretrained model: ",model_name)
-Example.configuration(args.dataroot, train_path=train_path, word2vec_path=args.word2vec_path,tokenizer_name=model_name)
-train_dataset = Example.load_dataset(train_path)
+Example.configuration(args.dataroot, train_path=train_path, word2vec_path=args.word2vec_path,tokenizer_name=model_name,extend=debug0)
+train_dataset = Example.load_dataset(train_path,train_path_cais)
 dev_dataset = Example.load_dataset(dev_path)
 logger.info("Load dataset and database finished, cost %.4fs ..." % (time.time() - start_time))
 logger.info("Dataset size: train -> %d ; dev -> %d" % (len(train_dataset), len(dev_dataset)))
@@ -114,19 +118,23 @@ if not args.testing:
     for i in range(args.max_epoch):
         start_time = time.time()
         epoch_loss = 0
+        epoch_sep_loss=0
+        epoch_tag_loss=0
         np.random.shuffle(train_index)
         model.train()
         count = 0
         for j in range(0, nsamples, step_size):
             cur_dataset = [train_dataset[k] for k in train_index[j: j + step_size]]
             current_batch = from_example_list(args, cur_dataset, device, train=True)
-            output, loss = model(current_batch)
+            output, loss, sep_loss, tag_loss = model(current_batch)
+            epoch_sep_loss += sep_loss.item()
+            epoch_tag_loss += tag_loss.item()
             epoch_loss += loss.item()
             loss.backward()
             optimizer.step()
             optimizer.zero_grad()
             count += 1
-        logger.info('Training: \tEpoch: %d\tTime: %.4f\tTraining Loss: %.4f' % (i, time.time() - start_time, epoch_loss / count))
+        logger.info('Training: \tEpoch: %d\tTime: %.4f\tTraining Loss: %.4f\tSep Loss: %.4f\tTag Loss: %.4f' % (i, time.time() - start_time, epoch_loss / count,epoch_sep_loss / count,epoch_tag_loss / count))
         # torch.cuda.empty_cache()
         # gc.collect()
 
