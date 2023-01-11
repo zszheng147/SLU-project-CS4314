@@ -56,14 +56,15 @@ class Vocab():
 
 class LabelVocab():
 
-    def __init__(self, root, extend=False):
+    def __init__(self, root, extend_cais=False,extend_ecdt=False):
         self.tag2idx, self.idx2tag = {}, {}
 
         self.tag2idx[PAD] = 0
         self.idx2tag[0] = PAD
         self.tag2idx['O'] = 1
         self.idx2tag[1] = 'O'
-        self.extend=extend
+        self.extend_cais=extend_cais
+        self.extend_ecdt=extend_ecdt
         self.from_filepath(root)
 
     def from_filepath(self, root):
@@ -79,10 +80,22 @@ class LabelVocab():
                     tag = f'{bi}-{act}-{slot}'
                     self.tag2idx[tag], self.idx2tag[idx] = idx, tag
 
-        if self.extend:
+        if self.extend_cais:
             ontology_cais = json.load(open(os.path.join(root, 'ontology_cais.json'), 'r'))
             acts = ontology_cais['acts']
             slots = ontology_cais['slots']
+
+            for act in acts:
+                for slot in slots:
+                    for bi in ['B', 'I']:
+                        idx = len(self.tag2idx)
+                        tag = f'{bi}-{act}-{slot}'
+                        self.tag2idx[tag], self.idx2tag[idx] = idx, tag
+        
+        if self.extend_ecdt:
+            ontology_ecdt = json.load(open(os.path.join(root, 'ontology_ecdt.json'), 'r'))
+            acts = ontology_ecdt['acts']
+            slots = ontology_ecdt['slots']
 
             for act in acts:
                 for slot in slots:

@@ -12,14 +12,16 @@ slots = []
 for i in data:
     for j in i:
         if len(j["semantic"])!=0:
-            action = j["semantic"][0][0]
-            slot = j["semantic"][0][1]
-            
-            # add unique actions and slots to lists
-            if action not in actions:
-                actions.append(action)
-            if slot not in slots:
-                slots.append(slot)
+            for k in range(len(j["semantic"])):
+
+                action = j["semantic"][k][0]
+                slot = j["semantic"][k][1]
+                
+                # add unique actions and slots to lists
+                if action not in actions:
+                    actions.append(action)
+                if slot not in slots:
+                    slots.append(slot)
             
 # write ontology.json
 ontology = {"acts": actions, "slots": slots}

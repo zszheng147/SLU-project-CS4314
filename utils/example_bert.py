@@ -9,15 +9,15 @@ from transformers import BertTokenizer, BertModel
 class Example():
 
     @classmethod
-    def configuration(cls, root, train_path=None, word2vec_path=None, tokenizer_name=None, extend=False):
+    def configuration(cls, root, train_path=None, word2vec_path=None, tokenizer_name=None, extend_cais=False, extend_ecdt=False):
         cls.evaluator = Evaluator() # 评价
         cls.word_vocab = Vocab(padding=True, unk=True, filepath=train_path) #no use now
         cls.word2vec = Word2vecUtils(word2vec_path) # 词向量
-        cls.label_vocab = LabelVocab(root,extend=extend) # ['B', 'I', 'O', '<pad>']
+        cls.label_vocab = LabelVocab(root,extend_cais=extend_cais,extend_ecdt=extend_ecdt) # ['B', 'I', 'O', '<pad>']
         cls.tokenizer = BertTokenizer.from_pretrained(tokenizer_name)
 
     @classmethod
-    def load_dataset(cls, data_path,data_path2=None):
+    def load_dataset(cls, data_path,data_path2=None,data_path3=None):
         datas = json.load(open(data_path, 'r'))
         examples = []
         for data in datas:
@@ -30,6 +30,12 @@ class Example():
                 for utt in data:
                     ex = cls(utt)
                     examples.append(ex)
+        if data_path3 is not None:
+            datas = json.load(open(data_path3, 'r'))
+            for data in datas:
+                for utt in data:
+                    ex = cls(utt)
+                    examples.append(ex)
         return examples
     
 
@@ -38,8 +44,8 @@ class Example():
         super(Example, self).__init__()
         self.ex = ex
         
-        # self.utt = ex['manual_transcript']
-        self.utt = ex['asr_1best']
+        self.utt = ex['manual_transcript']
+        # self.utt = ex['asr_1best']
         self.slot = {}
         for label in ex['semantic']:
             act_slot = f'{label[0]}-{label[1]}'
@@ -61,7 +67,7 @@ class Example():
         # self.input_idx_ori = [Example.word_vocab[c] for c in self.utt]
         self.utt_ori=self.utt
 
-        ### v1 ###
+        ### v1 ###  #78.324
 
         # self.utt=self.utt.replace(" ","_")
 
@@ -115,7 +121,7 @@ class Example():
         self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
 
         # 对英文分词的处理 （逐字符与逐单词不符）
-        words = set(re.findall(r'[a-zA-Z]+', self.utt))
+        words = set(re.findall(r'[a-zA-Z0-9]+', self.utt))
         for word in words:
             # print(word)
             word_token_ori=Example.tokenizer(word)["input_ids"][1:-1]

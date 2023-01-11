@@ -15,7 +15,8 @@ from model.slu_bert_tagging import SLUTaggingBERT
 
 import logging
 
-debug0=False #whether to extend training dataset
+debug0=False #whether to extend training dataset cais
+debug1=False #whether to extend training dataset ecdt
 
 # initialization params, output path, logger, random seed and torch.device
 args = init_args(sys.argv[1:])
@@ -27,10 +28,17 @@ print("Use GPU with index %s" % (args.device) if args.device >= 0 else "Use CPU 
 
 start_time = time.time()
 train_path = os.path.join(args.dataroot, 'train.json')
+
 if debug0:
     train_path_cais = os.path.join(args.dataroot, 'train_cais.json')
 else:
     train_path_cais = None
+
+if debug1:
+    train_path_ecdt = os.path.join(args.dataroot, 'train_ecdt.json')
+else:
+    train_path_ecdt = None
+
 dev_path = os.path.join(args.dataroot, 'development.json')
 model_name=args.model_name
 info=args.info
@@ -60,8 +68,8 @@ logger.addHandler(fh)
 
 
 logger.info("Use pretrained model: ",model_name)
-Example.configuration(args.dataroot, train_path=train_path, word2vec_path=args.word2vec_path,tokenizer_name=model_name,extend=debug0)
-train_dataset = Example.load_dataset(train_path,train_path_cais)
+Example.configuration(args.dataroot, train_path=train_path, word2vec_path=args.word2vec_path,tokenizer_name=model_name,extend_cais=debug0,extend_ecdt=debug1)
+train_dataset = Example.load_dataset(train_path,train_path_cais,train_path_ecdt)
 dev_dataset = Example.load_dataset(dev_path)
 logger.info("Load dataset and database finished, cost %.4fs ..." % (time.time() - start_time))
 logger.info("Dataset size: train -> %d ; dev -> %d" % (len(train_dataset), len(dev_dataset)))
