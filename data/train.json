@@ -7179,13 +7179,13 @@
     [
         {
             "utt_id": 1,
-            "manual_transcript": "麻烦到世纪城mk ktv",
-            "asr_1best": "麻烦到世纪城MK KTV",
+            "manual_transcript": "麻烦到世纪城m k ktv",
+            "asr_1best": "麻烦到世纪城M K KTV",
             "semantic": [
                 [
                     "inform",
                     "终点名称",
-                    "世纪城mk ktv"
+                    "世纪城m k ktv"
                 ]
             ]
         }

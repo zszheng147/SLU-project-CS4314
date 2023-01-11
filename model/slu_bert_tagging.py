@@ -25,14 +25,11 @@ class SLUTaggingBERT(nn.Module):
         
         trans_output=self.transformer(input_ids)
         trans_hidden=trans_output["last_hidden_state"]
-
         _ , sep_loss=self.sep_layer(trans_hidden, tag_mask,sep_tag_ids)
         
         decoder_out=self.decoder(input_ids,encoder_hidden_states=trans_hidden)
         hidden=decoder_out["last_hidden_state"]
-
         # print(hidden.shape,output.shape,input_ids.shape)
-
         tag_output,tag_loss = self.output_layer(hidden, tag_mask, tag_ids)
 
         loss=sep_loss+tag_loss
