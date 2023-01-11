@@ -44,8 +44,8 @@ class Example():
         super(Example, self).__init__()
         self.ex = ex
         
-        self.utt = ex['manual_transcript']
-        # self.utt = ex['asr_1best']
+        # self.utt = ex['manual_transcript']
+        self.utt = ex['asr_1best']
         self.slot = {}
         for label in ex['semantic']:
             act_slot = f'{label[0]}-{label[1]}'
@@ -118,6 +118,8 @@ class Example():
         ### v3 ### 78.44
         
         self.utt=self.utt.replace(" ","_")
+        self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
+
         self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
 
         # 对英文分词的处理 （逐字符与逐单词不符）
