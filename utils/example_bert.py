@@ -117,7 +117,7 @@ class Example():
 
         ### v3 ### 78.44
         
-        self.utt=self.utt.replace(" ","_")
+        self.utt=self.utt.replace(" ","_").replace("～","~")
         self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
 
         self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
