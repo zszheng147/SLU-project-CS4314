@@ -15,8 +15,8 @@ from model.slu_bert_tagging import SLUTaggingBERT
 
 import logging
 
-debug0=True #whether to extend training dataset cais
-debug1=True #whether to extend training dataset ecdt
+debug0=0 #whether to extend training dataset cais
+debug1=0 #whether to extend training dataset ecdt
 
 # initialization params, output path, logger, random seed and torch.device
 args = init_args(sys.argv[1:])
