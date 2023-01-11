@@ -38,8 +38,8 @@ class Example():
         super(Example, self).__init__()
         self.ex = ex
         
-        self.utt = ex['manual_transcript']
-        # self.utt = ex['asr_1best']
+        # self.utt = ex['manual_transcript']
+        self.utt = ex['asr_1best']
         self.slot = {}
         for label in ex['semantic']:
             act_slot = f'{label[0]}-{label[1]}'
@@ -65,22 +65,35 @@ class Example():
         # Insert a space before each non-Chinese character
         self.utt_ori=self.utt
 
-        replace_dict = {"(side)":"未知话语两侧", "(unknown)":"未知未知未知的内容", "(robot)":"未知的机器内容", "(dialect)":"未知未知的方言内容", "(noise)":"未知的噪声内容"," ":"空"
+        replace_dict = {"(side)":"未知话语两侧", "(unknown)":"未知未知未知的内容", "(robot)":"未知的机器内容", "(dialect)":"未知未知的方言内容", "(noise)":"未知的噪声内容"," ":"空","null":"空的内容"
                 } #"ok":"ok "*2, "ktv":"ktv "*3, "hi":"hi "*2, "beyond":"beyond "*6
 
         # 对奇怪字符的处理
         for key, value in replace_dict.items():
             self.utt = self.utt.replace(key, value)
 
+        self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
+
         # 对英文分词的处理 （逐字符与逐单词不符）
         words = set(re.findall(r'[a-zA-Z]+', self.utt))
         for word in words:
-            replacement = (word+' ') * len(word)
-            self.utt = self.utt.replace(word, replacement)
-
-        self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
-        
+            # print(word)
+            word_token_ori=Example.tokenizer(word)["input_ids"][1:-1]
+            word_token=[]
+            while len(word_token) < len(word):
+                word_token = word_token + word_token_ori #c重复当前token，补齐至与word一样长
+            if len(word_token) > len(word):
+                word_token=word_token[0:len(word)]
+            i=0
+            while i < (len(self.input_idx) - len(word_token_ori) + 1):
+                if self.input_idx[i:i+len(word_token_ori)] == word_token_ori:
+                    self.input_idx[i:i+len(word_token_ori)] = word_token
+                    i+=len(word)-1
+                i+=1
         assert len(self.utt_ori) == len(self.input_idx), f"Mismatch in length: {self.utt_ori} {self.input_idx}"
+        
+        # if self.utt_ori!=self.utt or words is not None:
+        #     print(self.utt_ori,self.utt)
 
         l = Example.label_vocab
         self.tag_id = [l.convert_tag_to_idx(tag) for tag in self.tags]
