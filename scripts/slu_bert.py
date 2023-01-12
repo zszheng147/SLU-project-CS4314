@@ -1,7 +1,7 @@
 #coding=utf8
 import sys, os, time
-from torch.optim import Adam
-
+from torch.optim import Adam,AdamW
+from torch.optim.lr_scheduler import StepLR
 install_path = os.path.abspath(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(install_path)
 
@@ -97,9 +97,12 @@ else:
 def set_optimizer(model, args):
     params = [(n, p) for n, p in model.named_parameters() if p.requires_grad]
     grouped_params = [{'params': list(set([p for n, p in params]))}]
-    optimizer = Adam(grouped_params, lr=args.lr)
+    optimizer = AdamW(grouped_params, lr=args.lr)
     return optimizer
 
+def set_scheduler(optimizer,args):
+    scheduler = StepLR(optimizer, step_size=args.step_size, gamma=args.gamma)
+    return scheduler
 
 def decode(choice):
     assert choice in ['train', 'dev']
@@ -129,6 +132,7 @@ if not args.testing:
     num_training_steps = ((len(train_dataset) + args.batch_size - 1) // args.batch_size) * args.max_epoch
     logger.info('Total training steps: %d' % (num_training_steps))
     optimizer = set_optimizer(model, args)
+    scheduler = set_scheduler(optimizer,args)
     nsamples, best_result = len(train_dataset), {'dev_acc': 0., 'dev_f1': 0.}
     train_index, step_size = np.arange(nsamples), args.batch_size
     logger.info('Start training ......')
@@ -151,6 +155,7 @@ if not args.testing:
             optimizer.step()
             optimizer.zero_grad()
             count += 1
+        scheduler.step()
         logger.info('Training: \tEpoch: %d\tTime: %.4f\tTraining Loss: %.4f\tSep Loss: %.4f\tTag Loss: %.4f' % (i, time.time() - start_time, epoch_loss / count,epoch_sep_loss / count,epoch_tag_loss / count))
         # torch.cuda.empty_cache()
         # gc.collect()
