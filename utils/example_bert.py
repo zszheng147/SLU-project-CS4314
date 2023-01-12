@@ -44,8 +44,9 @@ class Example():
     def __init__(self, ex: dict):
         super(Example, self).__init__()
         self.ex = ex
-        
-        if self.asr:
+
+
+        if self.asr is True:
             self.utt = ex['asr_1best']
         else:
             self.utt = ex['manual_transcript']

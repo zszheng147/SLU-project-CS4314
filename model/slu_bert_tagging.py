@@ -10,7 +10,6 @@ class SLUTaggingBERTMultiHead(nn.Module):
         self.config = config
         # self.word_embed = nn.Embedding(config.vocab_size, config.embed_size, padding_idx=0)
         self.dropout_layer = nn.Dropout(p=config.dropout)
-        self.output_layer = TaggingFNNDecoder(config.hidden_size, config.num_tags, config.tag_pad_idx,num_layers=1)
         self.transformer=BertModel.from_pretrained(config.model_name)
         self.sep_layer=TaggingFNNDecoder(config.hidden_size, 4, config.tag_pad_idx,num_layers=2)
         self.act_layer=TaggingFNNDecoder(config.hidden_size, config.num_acts, config.tag_pad_idx,num_layers=2)
