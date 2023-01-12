@@ -9,12 +9,13 @@ from transformers import BertTokenizer, BertModel
 class Example():
 
     @classmethod
-    def configuration(cls, root, train_path=None, word2vec_path=None, tokenizer_name=None, extend_cais=False, extend_ecdt=False):
+    def configuration(cls, root, asr=True,train_path=None, word2vec_path=None, tokenizer_name=None, extend_cais=False, extend_ecdt=False):
         cls.evaluator = Evaluator() # 评价
         cls.word_vocab = Vocab(padding=True, unk=True, filepath=train_path) #no use now
         cls.word2vec = Word2vecUtils(word2vec_path) # 词向量
         cls.label_vocab = LabelVocab(root,extend_cais=extend_cais,extend_ecdt=extend_ecdt) # ['B', 'I', 'O', '<pad>']
         cls.tokenizer = BertTokenizer.from_pretrained(tokenizer_name)
+        cls.asr=asr
 
     @classmethod
     def load_dataset(cls, data_path,data_path2=None,data_path3=None):
@@ -44,8 +45,11 @@ class Example():
         super(Example, self).__init__()
         self.ex = ex
         
-        # self.utt = ex['manual_transcript']
-        self.utt = ex['asr_1best']
+        if self.asr:
+            self.utt = ex['asr_1best']
+        else:
+            self.utt = ex['manual_transcript']
+        
         self.slot = {}
         for label in ex['semantic']:
             act_slot = f'{label[0]}-{label[1]}'
@@ -54,14 +58,23 @@ class Example():
         
         self.tags = ['O'] * len(self.utt)
         self.sep_tag_id=[1] * len(self.utt)
+        self.acts = [''] * len(self.utt)
+        self.slots = [''] * len(self.utt)
         for slot in self.slot:
             value = self.slot[slot]
             bidx = self.utt.find(value)
             if bidx != -1:
                 self.tags[bidx: bidx + len(value)] = [f'I-{slot}'] * len(value)
                 self.tags[bidx] = f'B-{slot}'
+
                 self.sep_tag_id[bidx: bidx + len(value)] = [2] * len(value)
                 self.sep_tag_id[bidx] = 3
+
+                self.acts[bidx: bidx + len(value)] = [slot.split('-')[0]] * len(value)
+
+                self.slots[bidx: bidx + len(value)] = [slot.split('-')[1]] * len(value)
+                # print(self.acts,self.slots)
+
         self.slotvalue = [f'{slot}-{value}' for slot, value in self.slot.items()]
         
         # self.input_idx_ori = [Example.word_vocab[c] for c in self.utt]
@@ -120,8 +133,6 @@ class Example():
         self.utt=self.utt.replace(" ","_").replace("～","~")
         self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
 
-        self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
-
         # 对英文分词的处理 （逐字符与逐单词不符）
         words = set(re.findall(r'[a-zA-Z0-9]+', self.utt))
         for word in words:
@@ -139,12 +150,15 @@ class Example():
                     i+=len(word)-1
                 i+=1
 
+
         ### v3 ###
 
 
 
         l = Example.label_vocab
         self.tag_id = [l.convert_tag_to_idx(tag) for tag in self.tags]
+        self.act_id = [l.convert_act_to_idx(tag) for tag in self.acts]
+        self.slot_id = [l.convert_slot_to_idx(tag) for tag in self.slots]
         assert len(self.utt_ori) == len(self.input_idx), f"Mismatch in length: {self.utt_ori} {self.input_idx}"
         if self.utt_ori!=self.utt:
             print(self.utt_ori,self.utt)

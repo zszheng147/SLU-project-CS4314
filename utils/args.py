@@ -30,4 +30,5 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--num_layer', default=2, type=int, help='number of layer')
     arg_parser.add_argument('--model_name', default="hfl/chinese-lert-base", help='name of pretrained model')
     arg_parser.add_argument('--info', default="", help='info of this run')
+    arg_parser.add_argument('--use_asr', default=True, help='use asr or manual script')
     return arg_parser

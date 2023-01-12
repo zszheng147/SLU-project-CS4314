@@ -11,12 +11,14 @@ from utils.example_bert import Example
 from utils.batch import from_example_list
 from utils.vocab import PAD
 from model.slu_baseline_tagging import SLUTagging
-from model.slu_bert_tagging import SLUTaggingBERT
+from model.slu_bert_tagging import SLUTaggingBERT, SLUTaggingBERTCascaded,SLUTaggingBERTMultiHead
 
 import logging
 
 debug0=0 #whether to extend training dataset cais
 debug1=0 #whether to extend training dataset ecdt
+debug2=0 #whether use cascaded
+debug3=1 #whether multihead
 
 # initialization params, output path, logger, random seed and torch.device
 args = init_args(sys.argv[1:])
@@ -68,7 +70,7 @@ logger.addHandler(fh)
 
 
 logger.info("Use pretrained model: ",model_name)
-Example.configuration(args.dataroot, train_path=train_path, word2vec_path=args.word2vec_path,tokenizer_name=model_name,extend_cais=debug0,extend_ecdt=debug1)
+Example.configuration(args.dataroot, asr=args.use_asr, train_path=train_path, word2vec_path=args.word2vec_path,tokenizer_name=model_name,extend_cais=debug0,extend_ecdt=debug1)
 train_dataset = Example.load_dataset(train_path,train_path_cais,train_path_ecdt)
 dev_dataset = Example.load_dataset(dev_path)
 logger.info("Load dataset and database finished, cost %.4fs ..." % (time.time() - start_time))
@@ -77,12 +79,19 @@ logger.info("Dataset size: train -> %d ; dev -> %d" % (len(train_dataset), len(d
 args.vocab_size = Example.word_vocab.vocab_size
 args.pad_idx = Example.word_vocab[PAD]
 args.num_tags = Example.label_vocab.num_tags
+args.num_acts = Example.label_vocab.num_acts
+args.num_slots = Example.label_vocab.num_slots
 args.tag_pad_idx = Example.label_vocab.convert_tag_to_idx(PAD)
 
 
 # model = SLUTagging(args).to(device)
-model=SLUTaggingBERT(args).to(device)
-Example.word2vec.load_embeddings(model.word_embed, Example.word_vocab, device=device)
+if debug2:
+    model=SLUTaggingBERTCascaded(args).to(device)
+elif debug3:
+    model=SLUTaggingBERTMultiHead(args).to(device)
+else:
+    model=SLUTaggingBERT(args).to(device)
+# Example.word2vec.load_embeddings(model.word_embed, Example.word_vocab, device=device)
 
 
 def set_optimizer(model, args):
@@ -134,9 +143,9 @@ if not args.testing:
         for j in range(0, nsamples, step_size):
             cur_dataset = [train_dataset[k] for k in train_index[j: j + step_size]]
             current_batch = from_example_list(args, cur_dataset, device, train=True)
-            output, loss, sep_loss, tag_loss = model(current_batch)
-            epoch_sep_loss += sep_loss.item()
-            epoch_tag_loss += tag_loss.item()
+            _, loss, sep_loss, tag_loss = model(current_batch)
+            if (epoch_sep_loss): epoch_sep_loss += sep_loss.item()
+            if (epoch_tag_loss): epoch_tag_loss += tag_loss.item()
             epoch_loss += loss.item()
             loss.backward()
             optimizer.step()

@@ -19,10 +19,16 @@ def from_example_list(args, ex_list, device='cpu', train=True):
         batch.labels = [ex.slotvalue for ex in ex_list]
         tag_lens = [len(ex.tag_id) for ex in ex_list]
         max_tag_lens = max(tag_lens)
+
         tag_ids = [ex.tag_id + [tag_pad_idx] * (max_tag_lens - len(ex.tag_id)) for ex in ex_list]
+        act_ids = [ex.act_id + [tag_pad_idx] * (max_tag_lens - len(ex.act_id)) for ex in ex_list]
+        slot_ids = [ex.slot_id + [tag_pad_idx] * (max_tag_lens - len(ex.slot_id)) for ex in ex_list]
         sep_tag_ids=[ex.sep_tag_id + [tag_pad_idx] * (max_tag_lens - len(ex.sep_tag_id)) for ex in ex_list]
+
         tag_mask = [[1] * len(ex.tag_id) + [0] * (max_tag_lens - len(ex.tag_id)) for ex in ex_list]
         batch.tag_ids = torch.tensor(tag_ids, dtype=torch.long, device=device)
+        batch.act_ids = torch.tensor(act_ids, dtype=torch.long, device=device)
+        batch.slot_ids = torch.tensor(slot_ids, dtype=torch.long, device=device)
         batch.sep_tag_ids= torch.tensor(sep_tag_ids, dtype=torch.long, device=device)
         batch.tag_mask = torch.tensor(tag_mask, dtype=torch.float, device=device)
     else:
