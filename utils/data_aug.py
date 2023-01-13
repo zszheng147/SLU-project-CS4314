@@ -1,6 +1,6 @@
 import random
 import json
-
+import copy
 origin = json.load(open('../data/train.json'))
 ontology = json.load(open('../data/ontology.json'))
 
@@ -50,10 +50,10 @@ for idx in range(len(origin)):
                 continue
 
             if slot in poi_slots:
-                for _ in range(200):
+                for _ in range(20):
                     v = random.choice(poi_values)
 
-                    tmp = item.copy()
+                    tmp=copy.deepcopy(item)
                     tmp["utt_id"] = 1
                     tmp["semantic"][semantic_idx][2] = v
                     tmp['manual_transcript'] = manual_transcript.replace(value, v)
@@ -61,7 +61,7 @@ for idx in range(len(origin)):
             
             if slot == "请求类型":
                 for v in request_values:
-                    tmp = item.copy()
+                    tmp=copy.deepcopy(item)
                     tmp["utt_id"] = 1
                     tmp["semantic"][semantic_idx][2] = v
                     tmp['manual_transcript'] = manual_transcript.replace(value, v)
@@ -69,13 +69,14 @@ for idx in range(len(origin)):
 
             if slot == "路线偏好":
                 for v in preferenece_values:
-                    tmp = item.copy()
+                    tmp=copy.deepcopy(item)
                     tmp["utt_id"] = 1
                     tmp["semantic"][semantic_idx][2] = v
                     tmp['manual_transcript'] = manual_transcript.replace(value, v)
                     appendix.append([tmp])
 
-
+print(len(appendix))
+print(appendix[0:10])
 augment = json.dumps(appendix, indent=4, ensure_ascii=False)
 
 with open('../data/train_augment.json', 'w') as wf:
