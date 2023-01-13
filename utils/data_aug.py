@@ -18,41 +18,67 @@ request_values = ["附近", "定位", "近郊", "旁边", "周边", "就近", "�
 preferenece_values = ["最近", "高速优先", "走国道", "少走高速", "不走高速", "走高速",
             "上高速", "高速公路", "最快", "躲避拥堵"]
 
+# 对象
+# object_values = ["语音", "高德地图", "路线", "位置", "途经点", "全程路线",
+#           "简易导航", "目的地", "地图", "定位", "路况", "导航"]
+
+# 操作
+#! 不太能替换
+
+# 序列号 #! 
+
+# 页码 not necessary
+# page_values = ['上一页', '下一页']
 
 appendix = []
 
 for idx in range(len(origin)):
-    for utt_id in range(len(origin[idx])):
+    appendix.append(origin[idx])
+    for item_id in range(len(origin[idx])):
+        
+        item = origin[idx][item_id]
+        # item["utt_id"] = 1 # utt_id of new items are all 1
 
-        manual_transcript = origin[idx][utt_id]['manual_transcript']
-        semantic = origin[idx][utt_id]['semantic']
+        manual_transcript = origin[idx][item_id]['manual_transcript']
+        semantic = origin[idx][item_id]['semantic']
+
         for semantic_idx in range(len(semantic)):
             slot = semantic[semantic_idx][1]
             value = semantic[semantic_idx][2]
+
+            if value not in manual_transcript: # use for ASR, guarantee `replace()` to work
+                continue
+
             if slot in poi_slots:
-                for _ in range(20):
+                for _ in range(200):
                     v = random.choice(poi_values)
-                    tmp = origin[idx]
-                    tmp[utt_id]["semantic"][semantic_idx][2] = v
-                    tmp[utt_id]['manual_transcript'] = manual_transcript.replace(value, v)
-                    appendix.append(tmp)
+
+                    tmp = item.copy()
+                    tmp["utt_id"] = 1
+                    tmp["semantic"][semantic_idx][2] = v
+                    tmp['manual_transcript'] = manual_transcript.replace(value, v)
+                    appendix.append([tmp])
             
             if slot == "请求类型":
                 for v in request_values:
-                    tmp = origin[idx]
-                    tmp[utt_id]["semantic"][semantic_idx][2] = v
-                    tmp[utt_id]['manual_transcript'] = manual_transcript.replace(value, v)
-                    appendix.append(tmp)
+                    tmp = item.copy()
+                    tmp["utt_id"] = 1
+                    tmp["semantic"][semantic_idx][2] = v
+                    tmp['manual_transcript'] = manual_transcript.replace(value, v)
+                    appendix.append([tmp])
 
             if slot == "路线偏好":
                 for v in preferenece_values:
-                    tmp = origin[idx]
-                    tmp[utt_id]["semantic"][semantic_idx][2] = v
-                    tmp[utt_id]['manual_transcript'] = manual_transcript.replace(value, v)
-                    appendix.append(tmp)
+                    tmp = item.copy()
+                    tmp["utt_id"] = 1
+                    tmp["semantic"][semantic_idx][2] = v
+                    tmp['manual_transcript'] = manual_transcript.replace(value, v)
+                    appendix.append([tmp])
 
-print(len(appendix))
+
 augment = json.dumps(appendix, indent=4, ensure_ascii=False)
 
 with open('../data/train_augment.json', 'w') as wf:
     print(augment, file=wf)
+                
+                
