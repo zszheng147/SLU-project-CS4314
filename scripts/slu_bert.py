@@ -19,6 +19,7 @@ debug0=0 #whether to extend training dataset cais
 debug1=0 #whether to extend training dataset ecdt
 debug2=0 #whether use cascaded
 debug3=1 #whether multihead
+debug4=1 #whether augmentation 
 
 # initialization params, output path, logger, random seed and torch.device
 args = init_args(sys.argv[1:])
@@ -29,8 +30,10 @@ print("Random seed is set to %d" % (args.seed))
 print("Use GPU with index %s" % (args.device) if args.device >= 0 else "Use CPU as target torch device")
 
 start_time = time.time()
-train_path = os.path.join(args.dataroot, 'train.json')
-
+if debug4:
+    train_path = os.path.join(args.dataroot, 'train_augment.json')
+else:
+    train_path = os.path.join(args.dataroot, 'train.json')
 if debug0:
     train_path_cais = os.path.join(args.dataroot, 'train_cais.json')
 else:
@@ -132,7 +135,7 @@ if not args.testing:
     num_training_steps = ((len(train_dataset) + args.batch_size - 1) // args.batch_size) * args.max_epoch
     logger.info('Total training steps: %d' % (num_training_steps))
     optimizer = set_optimizer(model, args)
-    scheduler = set_scheduler(optimizer,args)
+    # scheduler = set_scheduler(optimizer,args)
     nsamples, best_result = len(train_dataset), {'dev_acc': 0., 'dev_f1': 0.}
     train_index, step_size = np.arange(nsamples), args.batch_size
     logger.info('Start training ......')
@@ -155,7 +158,7 @@ if not args.testing:
             optimizer.step()
             optimizer.zero_grad()
             count += 1
-        scheduler.step()
+        # scheduler.step()
         logger.info('Training: \tEpoch: %d\tTime: %.4f\tTraining Loss: %.4f\tSep Loss: %.4f\tTag Loss: %.4f' % (i, time.time() - start_time, epoch_loss / count,epoch_sep_loss / count,epoch_tag_loss / count))
         # torch.cuda.empty_cache()
         # gc.collect()

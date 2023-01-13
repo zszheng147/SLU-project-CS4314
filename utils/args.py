@@ -26,7 +26,7 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--weight_decay', type=float, default=0.01, help='weight decay')
     arg_parser.add_argument('--step_size', type=int, default=50, help='step size for step scheduler')
     arg_parser.add_argument('--milestones', type=list, default=[50, 100], help='milestones for step scheduler')
-    arg_parser.add_argument('--gamma', type=float, default=0.1, help='gamma for step scheduler')
+    arg_parser.add_argument('--gamma', type=float, default=0.5, help='gamma for step scheduler')
     arg_parser.add_argument('--warmup_steps', type=int, default=0, help='warmup steps for scheduler')
     arg_parser.add_argument('--max_lr', type=float, default=0.01, help='max learning rate for cosine scheduler')
     #### Common Encoder Hyperparams ####
