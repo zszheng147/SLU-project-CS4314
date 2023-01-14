@@ -1,12 +1,16 @@
 #!/bin/bash
 
 ## data
-data_cais="None"
-data_ecdt="None"
+# data_cais="train_cais.json"
+# data_ecdt="train_ecdt.json"
 data_augment="train.json train_augment.json" # not aug or aug
 
 ## pre-training models
-pre_training_models="hfl/chinese-macbert-base"
+pre_training_models=$1
+# bert-base-chinese hfl/chinese-macbert-base 
+# hfl/chinese-lert-base hfl/chinese-pert-base
+# hfl/chinese-bert-wwm-ext hfl/chinese-roberta-wwm-ext
+
 
 ## model architectures
 model_architectures="0 1 2" # 0-2
@@ -25,7 +29,7 @@ dropout=0.2
 use_asr="True False"
 train_mix="True False"
 
-device=4
+device=5
 
 
 for model in $model_architectures; do
@@ -35,7 +39,6 @@ for model in $model_architectures; do
                 for mix in $train_mix; do
                     for lr in $lrs; do
                         python scripts/slu_bert.py --train_path $use_aug \
-                            --train_path_cais $data_cais --train_path_ecdt $data_ecdt \
                             --device $device --lr $lr --max_epoch $max_epoch \
                             --batch_size $bsz --dropout $dropout --architecture $model \
                             --model_name $pre_train --use_asr $asr --train_mix $mix
@@ -45,4 +48,5 @@ for model in $model_architectures; do
         done
     done
 done
+                            # --train_path_cais $data_cais --train_path_ecdt $data_ecdt \
 

@@ -28,12 +28,13 @@ train_path = os.path.join(args.dataroot, args.train_path)
 
 extend_cais, extend_ecdt = False, False
 train_path_cais, train_path_ecdt = None, None
+
 if args.train_path_cais is not None:
     train_path_cais = os.path.join(args.dataroot, args.train_path_cais)
-    extend_cais=True
+    extend_cais = True
 if args.train_path_ecdt is not None:
     train_path_ecdt = os.path.join(args.dataroot, args.train_path_ecdt)
-    extend_ecdt=False
+    extend_ecdt = True
 
 dev_path = os.path.join(args.dataroot, 'development.json')
 model_name=args.model_name
@@ -50,12 +51,12 @@ info += 'aug-Y.' if 'aug' in args.train_path else 'aug-N.'
 info += 'extra1.' if args.train_path_cais is not None else ""
 info += 'extra2.' if args.train_path_ecdt is not None else ""
 if args.train_mix:
-    info += 'mix-Y.'
+    info += 'mix-Y'
 else:
     if args.use_asr:
-        info += 'mix-N.ASR-Y.'
+        info += 'mix-N.ASR-Y'
     else:
-        info += 'mix-N.ASR-N.'
+        info += 'mix-N.ASR-N'
 
 file_path = os.path.join("exp", f'{info}.log')
 
@@ -82,9 +83,9 @@ if args.train_mix: # 交替训练
 
 if not args.testing:
     if args.use_asr:
-        train_asr_dataset = Example.load_dataset(train_path,train_path_cais,train_path_ecdt, use_asr=True)
+        train_asr_dataset = Example.load_dataset(train_path, train_path_cais, train_path_ecdt, use_asr=True)
 
-    train_dataset = Example.load_dataset(train_path, train_path_cais, train_path_ecdt)
+    train_dataset = Example.load_dataset(train_path, train_path_cais, train_path_ecdt, use_asr=args.use_asr)
     logger.info(f"Dataset size: train -> {len(train_dataset)}")
 
 dev_dataset = Example.load_dataset(dev_path, use_asr=True)
@@ -101,15 +102,14 @@ args.tag_pad_idx = Example.label_vocab.convert_tag_to_idx(PAD)
 
 # model = SLUTagging(args).to(device)
 architectures = [SLUTaggingBERT, SLUTaggingBERTCascaded, SLUTaggingBERTMultiHead]
-model = architectures[args.architecture](args).to(device)
+model = architectures[int(args.architecture)](args).to(device)
 # if args.architecture == 0:
 #     Example.word2vec.load_embeddings(model.word_embed, Example.word_vocab, device=device)
 
 if args.testing:
     checkpoint = torch.load(open('model.bin', 'rb'), map_location=device)
-    model.load_state_dict(checkpoint['model'])
+    model.load_state_dict(checkpoint['model'])                                              
     print("Load saved model from root path")
-
 
 def set_optimizer(model, args):
     params = [(n, p) for n, p in model.named_parameters() if p.requires_grad]
