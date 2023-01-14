@@ -99,32 +99,29 @@ class LabelVocab():
                     tag = f'{bi}-{act}-{slot}'
                     self.tag2idx[tag], self.idx2tag[idx] = idx, tag
 
+        ontologies_extend = []
         if self.extend_cais:
-            ontology_cais = json.load(
-                open(os.path.join(root, 'ontology_cais.json'), 'r'))
-            acts = ontology_cais['acts']
-            slots = ontology_cais['slots']
-
-            for act in acts:
-                for slot in slots:
-                    for bi in ['B', 'I']:
-                        idx = len(self.tag2idx)
-                        tag = f'{bi}-{act}-{slot}'
-                        self.tag2idx[tag], self.idx2tag[idx] = idx, tag
-
+            ontologies_extend.append(json.load(open(os.path.join(root, 'ontology_cais.json'), 'r')))
         if self.extend_ecdt:
-            ontology_ecdt = json.load(
-                open(os.path.join(root, 'ontology_ecdt.json'), 'r'))
-            acts = ontology_ecdt['acts']
-            slots = ontology_ecdt['slots']
+            ontologies_extend.append(json.load(open(os.path.join(root, 'ontology_ecdt.json'), 'r')))
 
+        for ontology_extend in ontologies_extend:
+            acts = ontology_extend['acts']
+            slots = ontology_extend['slots']
+
+            for act in acts:
+                idx = len(self.act2idx)
+                self.act2idx[act], self.idx2act[idx] = idx, act
+            for slot in slots:
+                idx = len(self.slot2idx)
+                self.slot2idx[slot], self.idx2slot[idx] = idx, slot
             for act in acts:
                 for slot in slots:
                     for bi in ['B', 'I']:
                         idx = len(self.tag2idx)
                         tag = f'{bi}-{act}-{slot}'
                         self.tag2idx[tag], self.idx2tag[idx] = idx, tag
-
+                        
     def convert_tag_to_idx(self, tag):
         return self.tag2idx[tag]
 
