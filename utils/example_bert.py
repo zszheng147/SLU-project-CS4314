@@ -47,7 +47,7 @@ class Example():
 
 
         if self.asr is True:
-            self.utt = ex['asr_1best']
+            self.utt = ex['asr_1best'].upper()
         else:
             self.utt = ex['manual_transcript']
         

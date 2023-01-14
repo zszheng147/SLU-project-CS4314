@@ -19,7 +19,8 @@ debug0=0 #whether to extend training dataset cais
 debug1=0 #whether to extend training dataset ecdt
 debug2=0 #whether use cascaded
 debug3=1 #whether multihead
-debug4=1 #whether augmentation 
+debug4=0 #whether augmentation
+debug5=1 #whether train with manual 
 
 # initialization params, output path, logger, random seed and torch.device
 args = init_args(sys.argv[1:])
@@ -73,8 +74,13 @@ logger.addHandler(fh)
 
 
 logger.info("Use pretrained model: ",model_name)
-Example.configuration(args.dataroot, asr=args.use_asr, train_path=train_path, word2vec_path=args.word2vec_path,tokenizer_name=model_name,extend_cais=debug0,extend_ecdt=debug1)
+if debug5:
+    Example.configuration(args.dataroot, asr=False, train_path=train_path, word2vec_path=args.word2vec_path,tokenizer_name=model_name,extend_cais=debug0,extend_ecdt=debug1)
+else:
+    Example.configuration(args.dataroot, asr=args.use_asr, train_path=train_path, word2vec_path=args.word2vec_path,tokenizer_name=model_name,extend_cais=debug0,extend_ecdt=debug1)
 train_dataset = Example.load_dataset(train_path,train_path_cais,train_path_ecdt)
+
+Example.configuration(args.dataroot, asr=args.use_asr, train_path=train_path, word2vec_path=args.word2vec_path,tokenizer_name=model_name,extend_cais=debug0,extend_ecdt=debug1)
 dev_dataset = Example.load_dataset(dev_path)
 logger.info("Load dataset and database finished, cost %.4fs ..." % (time.time() - start_time))
 logger.info("Dataset size: train -> %d ; dev -> %d" % (len(train_dataset), len(dev_dataset)))
