@@ -25,11 +25,14 @@ class Example():
 
         if extra_data1 is not None:
             datas = json.load(open(extra_data1, 'r'))
-            examples.append([[cls(utt, use_asr) for utt in data] for data in datas])
+            extra_examples_1 = [cls(utt, use_asr, testing) for data in datas for utt in data]
+            examples += extra_examples_1
 
         if extra_data2 is not None:
             datas = json.load(open(extra_data2, 'r'))
-            examples.append([[cls(utt, use_asr) for utt in data] for data in datas])
+            extra_examples_2 = [cls(utt, use_asr, testing) for data in datas for utt in data]
+            examples += extra_examples_2
+        
         return examples
 
     def __init__(self, ex: dict, use_asr=False, testing=False):
