@@ -1,13 +1,14 @@
 import random
 import json
 import copy
-origin = json.load(open('../data/train.json'))
-ontology = json.load(open('../data/ontology.json'))
+
+origin = json.load(open('./data/train.json'))
+ontology = json.load(open('./data/ontology.json'))
 
 ## 这些slots的value都在poi_name文件中
 poi_slots = ['poi名称', 'poi修饰', 'poi目标', '起点名称', '起点修饰', '起点目标', 
                 '终点名称', '终点修饰', '终点目标', '途经点名称']
-poi_values = [c.rstrip() for c in open('../data/lexicon/poi_name.txt')]
+poi_values = [c.rstrip() for c in open('./data/lexicon/poi_name.txt')]
 
 
 ## 请求类型
@@ -23,9 +24,8 @@ preferenece_values = ["最近", "高速优先", "走国道", "少走高速", "�
 #           "简易导航", "目的地", "地图", "定位", "路况", "导航"]
 
 # 操作
-#! 不太能替换
 
-# 序列号 #! 
+# 序列号
 
 # 页码 not necessary
 # page_values = ['上一页', '下一页']
@@ -50,7 +50,7 @@ for idx in range(len(origin)):
                 continue
 
             if slot in poi_slots:
-                for _ in range(20):
+                for _ in range(30):
                     v = random.choice(poi_values)
 
                     tmp=copy.deepcopy(item)
@@ -75,11 +75,11 @@ for idx in range(len(origin)):
                     tmp['manual_transcript'] = manual_transcript.replace(value, v)
                     appendix.append([tmp])
 
-print(len(appendix))
-print(appendix[0:10])
+# print(len(appendix))
+# print(appendix[0:10])
 augment = json.dumps(appendix, indent=4, ensure_ascii=False)
 
-with open('../data/train_augment.json', 'w') as wf:
+with open('./data/train_augment.json', 'w') as wf:
     print(augment, file=wf)
                 
                 

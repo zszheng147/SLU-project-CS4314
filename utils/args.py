@@ -42,8 +42,8 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--num_layer', default=2, type=int, help='number of layer')
     arg_parser.add_argument('--model_name', default="hfl/chinese-bert-wwm-ext", help='name of pretrained model')
     
-    arg_parser.add_argument('--architecture', default=0, help='model architecture')
-    arg_parser.add_argument('--info', default="", help='info of this run')
-    arg_parser.add_argument('--use_asr', default=True, help='use asr or manual script')
-    arg_parser.add_argument('--train_mix', default=False, help='train by turns')
+    arg_parser.add_argument('--architecture', default=2, type=int, help='model architecture')
+    arg_parser.add_argument('--info', default="exp", help='info of this run')
+    arg_parser.add_argument('--use_asr', default=1, type=int, help='use asr or manual script')
+    arg_parser.add_argument('--train_mix', default=0, type=int, help='train by turns')
     return arg_parser

@@ -1,0 +1,5825 @@
+[
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "中央四频道火箭兜风",
+            "asr_1best": "中央四频道火箭兜风",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "中央四频道"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "火箭兜风"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "中超赛事预告吗？",
+            "asr_1best": "中超赛事预告吗？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "中超"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "武林风视频",
+            "asr_1best": "武林风视频",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "武林风"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "影视频道有什么节目",
+            "asr_1best": "影视频道有什么节目",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "影视频道"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "草虾尾怎样做。",
+            "asr_1best": "草虾尾怎样做。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "ingredient",
+                    "虾尾"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我要看末世进化小说",
+            "asr_1best": "我要看末世进化小说",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "末世进化"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查下温州到杭州的火车票",
+            "asr_1best": "查下温州到杭州的火车票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "温州"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "杭州"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给黄杠发短信",
+            "asr_1best": "给黄杠发短信",
+            "semantic": [
+                [
+                    "SEND",
+                    "name",
+                    "黄杠"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我想知道科大讯飞的市值",
+            "asr_1best": "我想知道科大讯飞的市值",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "科大讯飞"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查询郑州到上海的航班。",
+            "asr_1best": "查询郑州到上海的航班。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "郑州"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "上海"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "昆山大润发在哪里",
+            "asr_1best": "昆山大润发在哪里",
+            "semantic": [
+                [
+                    "POSITION",
+                    "location_area",
+                    "昆山"
+                ],
+                [
+                    "POSITION",
+                    "location_poi",
+                    "大润发"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "百度百科",
+            "asr_1best": "百度百科",
+            "semantic": [
+                [
+                    "LAUNCH",
+                    "name",
+                    "百度百科"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "陕西二套",
+            "asr_1best": "陕西二套",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "陕西二套"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "搜索兰陵王。",
+            "asr_1best": "搜索兰陵王。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "兰陵王"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "湖北荆州到黄石的火车",
+            "asr_1best": "湖北荆州到黄石的火车",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_province",
+                    "湖北"
+                ],
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "荆州"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "黄石"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "地心历险记二",
+            "asr_1best": "地心历险记二",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "地心历险记二"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "九江到景德镇的汽车。",
+            "asr_1best": "九江到景德镇的汽车。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "Src",
+                    "九江"
+                ],
+                [
+                    "QUERY",
+                    "Dest",
+                    "景德镇"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "嗯打开相机",
+            "asr_1best": "嗯打开相机",
+            "semantic": [
+                [
+                    "LAUNCH",
+                    "name",
+                    "相机"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "讯飞语音我想知道山东省东营市今天的新闻。",
+            "asr_1best": "讯飞语音我想知道山东省东营市今天的新闻。",
+            "semantic": [
+                [
+                    "PLAY",
+                    "location_province",
+                    "山东省"
+                ],
+                [
+                    "PLAY",
+                    "location_city",
+                    "东营市"
+                ],
+                [
+                    "PLAY",
+                    "datetime_date",
+                    "今天"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "中国教育电视台三台",
+            "asr_1best": "中国教育电视台三台",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "中国教育电视台三台"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "红烧土豆怎么烧？",
+            "asr_1best": "红烧土豆怎么烧？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "红烧土豆"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "坐宫保鸡丁需要哪些材料？",
+            "asr_1best": "坐宫保鸡丁需要哪些材料？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "宫保鸡丁"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "连云港到徐州的火车票",
+            "asr_1best": "连云港到徐州的火车票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "连云港"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "徐州"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我去烟台有高铁吗",
+            "asr_1best": "我去烟台有高铁吗",
+            "semantic": [
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "烟台"
+                ],
+                [
+                    "QUERY",
+                    "category",
+                    "高铁"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "松江钢材城在哪里",
+            "asr_1best": "松江钢材城在哪里",
+            "semantic": [
+                [
+                    "POSITION",
+                    "location_poi",
+                    "松江钢材城"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "卤猪蹄怎么做？",
+            "asr_1best": "卤猪蹄怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "卤猪蹄"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查一下到洛阳的高铁",
+            "asr_1best": "查一下到洛阳的高铁",
+            "semantic": [
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "洛阳"
+                ],
+                [
+                    "QUERY",
+                    "category",
+                    "高铁"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "您给我来一首，夏明翰的就义诗。",
+            "asr_1best": "您给我来一首，夏明翰的就义诗。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "夏明翰"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "就义诗"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "发信息给许路雨",
+            "asr_1best": "发信息给许路雨",
+            "semantic": [
+                [
+                    "SEND",
+                    "name",
+                    "许路雨"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "雄关漫道真如铁下一句是什么？",
+            "asr_1best": "雄关漫道真如铁下一句是什么？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "雄关漫道真如铁"
+                ],
+                [
+                    "QUERY",
+                    "queryField",
+                    "下一句"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "蛋炒饭怎么煮",
+            "asr_1best": "蛋炒饭怎么煮",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "蛋炒饭"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "现在有什么好看的电视剧吗？",
+            "asr_1best": "现在有什么好看的电视剧吗？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "datetime_time",
+                    "现在"
+                ],
+                [
+                    "QUERY",
+                    "category",
+                    "电视剧"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "招商银行港股的股价",
+            "asr_1best": "招商银行港股的股价",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "招商银行"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "呼叫鹏鹏",
+            "asr_1best": "呼叫鹏鹏",
+            "semantic": [
+                [
+                    "DIAL",
+                    "name",
+                    "鹏鹏"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "牛肉面，哦。",
+            "asr_1best": "牛肉面，哦。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "牛肉面"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查询广州到贵港的火车",
+            "asr_1best": "查询广州到贵港的火车",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "广州"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "贵港"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "把我打开淘宝的网页",
+            "asr_1best": "把我打开淘宝的网页",
+            "semantic": [
+                [
+                    "OPEN",
+                    "name",
+                    "淘宝"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "搜索古诗绝句。",
+            "asr_1best": "搜索古诗绝句。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "绝句"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "八月一号去上海的航班",
+            "asr_1best": "八月一号去上海的航班",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startDate_date",
+                    "八月一号"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "上海"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查查什么时候放百变大咖秀",
+            "asr_1best": "查查什么时候放百变大咖秀",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "百变大咖秀"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "哪些台在放电影",
+            "asr_1best": "哪些台在放电影",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "电影"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查一查同方股份的股票",
+            "asr_1best": "查一查同方股份的股票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "同方股份"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我想看爱在春天",
+            "asr_1best": "我想看爱在春天",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "爱在春天"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "总计今天的新闻。",
+            "asr_1best": "总计今天的新闻。",
+            "semantic": [
+                [
+                    "PLAY",
+                    "datetime_date",
+                    "今天"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我要看下中央六套",
+            "asr_1best": "我要看下中央六套",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "中央六套"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "随便唱几首歌吧",
+            "asr_1best": "随便唱几首歌吧",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给我打开一下qq",
+            "asr_1best": "给我打开一下qq",
+            "semantic": [
+                [
+                    "LAUNCH",
+                    "name",
+                    "qq"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "星期四去上海的火车",
+            "asr_1best": "星期四去上海的火车",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startDate_date",
+                    "星期四"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "上海"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "唐寅的诗。",
+            "asr_1best": "唐寅的诗。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "唐寅"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "替我回复邮件",
+            "asr_1best": "替我回复邮件",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "发信息给苏建江",
+            "asr_1best": "发信息给苏建江",
+            "semantic": [
+                [
+                    "SEND",
+                    "name",
+                    "苏建江"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "得了关节炎怎么办？",
+            "asr_1best": "得了关节炎怎么办？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "关节炎"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "opera浏览器",
+            "asr_1best": "opera浏览器",
+            "semantic": [
+                [
+                    "LAUNCH",
+                    "name",
+                    "opera浏览器"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "朗诵诗词。",
+            "asr_1best": "朗诵诗词。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查询上海到丽江飞机票的价格",
+            "asr_1best": "查询上海到丽江飞机票的价格",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "上海"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "丽江"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "到鼓楼怎么走",
+            "asr_1best": "到鼓楼怎么走",
+            "semantic": [
+                [
+                    "ROUTE",
+                    "endLoc_area",
+                    "鼓楼"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我要看现代重生小说",
+            "asr_1best": "我要看现代重生小说",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "现代重生"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我要猜字谜不笨有答案。",
+            "asr_1best": "我要猜字谜不笨有答案。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "字谜"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "汉堡的英语怎么说",
+            "asr_1best": "汉堡的英语怎么说",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "content",
+                    "汉堡"
+                ],
+                [
+                    "TRANSLATION",
+                    "target",
+                    "英语"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "来首快乐崇拜",
+            "asr_1best": "来首快乐崇拜",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "快乐崇拜"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "动画片",
+            "asr_1best": "动画片",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tag",
+                    "动画"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "红烧鱼怎么烧啊？",
+            "asr_1best": "红烧鱼怎么烧啊？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "红烧鱼"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "发短信给张三的186的号码我今天请他吃饭",
+            "asr_1best": "发短信给张三的186的号码我今天请他吃饭",
+            "semantic": [
+                [
+                    "SEND",
+                    "name",
+                    "张三"
+                ],
+                [
+                    "SEND",
+                    "headNum",
+                    "186"
+                ],
+                [
+                    "SEND",
+                    "content",
+                    "我今天请他吃饭"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "打了怎么做红烧肉的做法？",
+            "asr_1best": "打了怎么做红烧肉的做法？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "红烧肉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "读一首古诗给我听吧！",
+            "asr_1best": "读一首古诗给我听吧！",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "麻辣豆腐怎么做啊？",
+            "asr_1best": "麻辣豆腐怎么做啊？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "麻辣豆腐"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查看之丽丽的号码",
+            "asr_1best": "查看之丽丽的号码",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "之丽丽"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查询神鬼认证",
+            "asr_1best": "查询神鬼认证",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "神鬼认证"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "打开腾讯拍拍网",
+            "asr_1best": "打开腾讯拍拍网",
+            "semantic": [
+                [
+                    "OPEN",
+                    "name",
+                    "腾讯拍拍网"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "可乐鸡翅怎么做呀晚点告诉我。",
+            "asr_1best": "可乐鸡翅怎么做呀晚点告诉我。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "可乐鸡翅"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "环球旅游明天有演我爱饭米粒",
+            "asr_1best": "环球旅游明天有演我爱饭米粒",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "环球旅游"
+                ],
+                [
+                    "QUERY",
+                    "datetime_date",
+                    "明天"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "我爱饭米粒"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "恒大山东鲁能比分是多少？",
+            "asr_1best": "恒大山东鲁能比分是多少？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "homeName",
+                    "恒大"
+                ],
+                [
+                    "QUERY",
+                    "awayName",
+                    "山东鲁能"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "腾讯股票昨日收盘价",
+            "asr_1best": "腾讯股票昨日收盘价",
+            "semantic": [
+                [
+                    "CLOSEPRICE_QUERY",
+                    "name",
+                    "腾讯"
+                ],
+                [
+                    "CLOSEPRICE_QUERY",
+                    "yesterday",
+                    "昨日"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "拔丝芋头怎么做",
+            "asr_1best": "拔丝芋头怎么做",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "拔丝芋头"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "宁波机场在哪里",
+            "asr_1best": "宁波机场在哪里",
+            "semantic": [
+                [
+                    "POSITION",
+                    "location_city",
+                    "宁波"
+                ],
+                [
+                    "POSITION",
+                    "location_poi",
+                    "机场"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "帮我发邮件给婷婷",
+            "asr_1best": "帮我发邮件给婷婷",
+            "semantic": [
+                [
+                    "SEND",
+                    "name",
+                    "婷婷"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "恶念首唐诗。",
+            "asr_1best": "恶念首唐诗。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "来首青花瓷",
+            "asr_1best": "来首青花瓷",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "青花瓷"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "上海能源这支股票怎么样",
+            "asr_1best": "上海能源这支股票怎么样",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "上海能源"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "替我回复这封邮件",
+            "asr_1best": "替我回复这封邮件",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "明天去贵阳的火车",
+            "asr_1best": "明天去贵阳的火车",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startDate_date",
+                    "明天"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "贵阳"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "把王建春的电话号码发给张学政",
+            "asr_1best": "把王建春的电话号码发给张学政",
+            "semantic": [
+                [
+                    "SENDCONTACTS",
+                    "name",
+                    "王建春"
+                ],
+                [
+                    "SENDCONTACTS",
+                    "receiver",
+                    "张学政"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "杭州到上海",
+            "asr_1best": "杭州到上海",
+            "semantic": [
+                [
+                    "ROUTE",
+                    "startLoc_city",
+                    "杭州"
+                ],
+                [
+                    "ROUTE",
+                    "endLoc_city",
+                    "上海"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "从广州到南昌的火车票时刻表",
+            "asr_1best": "从广州到南昌的火车票时刻表",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "广州"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "南昌"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "翻译共产党员",
+            "asr_1best": "翻译共产党员",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "content",
+                    "共产党员"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "小c帮我搜一下断剑视频",
+            "asr_1best": "小c帮我搜一下断剑视频",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "断剑"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "鱼香肉丝，怎么做得？",
+            "asr_1best": "鱼香肉丝，怎么做得？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "鱼香肉丝"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "牛骨汤",
+            "asr_1best": "牛骨汤",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "牛骨汤"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "占田你给我放一下最近的新闻。",
+            "asr_1best": "占田你给我放一下最近的新闻。",
+            "semantic": [
+                [
+                    "PLAY",
+                    "datetime_date",
+                    "最近"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "打开4399小游戏",
+            "asr_1best": "打开4399小游戏",
+            "semantic": [
+                [
+                    "OPEN",
+                    "name",
+                    "4399小游戏"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我想听想唱就唱",
+            "asr_1best": "我想听想唱就唱",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "想唱就唱"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "登录不行，做烧鸡公学，我爱你！",
+            "asr_1best": "登录不行，做烧鸡公学，我爱你！",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "烧鸡公"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查一下那个南京到昆明的火车",
+            "asr_1best": "查一下那个南京到昆明的火车",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "南京"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "昆明"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "肉肉怎么腌制？",
+            "asr_1best": "肉肉怎么腌制？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "ingredient",
+                    "肉肉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "江山",
+            "asr_1best": "江山",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "江山"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "中国石化的股价怎么样",
+            "asr_1best": "中国石化的股价怎么样",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "中国石化"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "冰激凌怎么做哦",
+            "asr_1best": "冰激凌怎么做哦",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "冰激凌"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "你酸辣土豆丝怎么做？",
+            "asr_1best": "你酸辣土豆丝怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "酸辣土豆丝"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我要听劝化这首歌",
+            "asr_1best": "我要听劝化这首歌",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "劝化"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我听首歌",
+            "asr_1best": "我听首歌",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "酸菜是怎么做的可以用塑料布。",
+            "asr_1best": "酸菜是怎么做的可以用塑料布。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "ingredient",
+                    "酸菜"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给我背一首唐诗李白写的",
+            "asr_1best": "给我背一首唐诗李白写的",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "李白"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "明天到合肥的火车",
+            "asr_1best": "明天到合肥的火车",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startDate_date",
+                    "明天"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "合肥"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "肉沫茄子，怎么做？",
+            "asr_1best": "肉沫茄子，怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "肉沫茄子"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "晋江到武汉的航班",
+            "asr_1best": "晋江到武汉的航班",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_area",
+                    "晋江"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "武汉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "泰州新闻。",
+            "asr_1best": "泰州新闻。",
+            "semantic": [
+                [
+                    "PLAY",
+                    "location_city",
+                    "泰州"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "怎么做水煮鱼店？",
+            "asr_1best": "怎么做水煮鱼店？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "水煮鱼"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "赶集网",
+            "asr_1best": "赶集网",
+            "semantic": [
+                [
+                    "OPEN",
+                    "name",
+                    "赶集网"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "来首李白的诗集。",
+            "asr_1best": "来首李白的诗集。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "李白"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "讲个谜语吧，辣。",
+            "asr_1best": "讲个谜语吧，辣。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "谜语"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给我看邮件",
+            "asr_1best": "给我看邮件",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "打开浦口新闻综合频道",
+            "asr_1best": "打开浦口新闻综合频道",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "浦口新闻综合频道"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我叫小沈阳这首歌",
+            "asr_1best": "我叫小沈阳这首歌",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "我叫小沈阳"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "小猪哨糖醋排骨的做法。",
+            "asr_1best": "小猪哨糖醋排骨的做法。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "糖醋排骨"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查询洛阳钼业的股票",
+            "asr_1best": "查询洛阳钼业的股票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "洛阳钼业"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "辛夷坞原来你还在这里小说",
+            "asr_1best": "辛夷坞原来你还在这里小说",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "辛夷坞"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "原来你还在这里"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查一下明天下午南通到南京的火车票",
+            "asr_1best": "查一下明天下午南通到南京的火车票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startDate_date",
+                    "明天"
+                ],
+                [
+                    "QUERY",
+                    "startDate_time",
+                    "下午"
+                ],
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "南通"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "南京"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "胡歌忘记时间",
+            "asr_1best": "胡歌忘记时间",
+            "semantic": [
+                [
+                    "PLAY",
+                    "artist",
+                    "胡歌"
+                ],
+                [
+                    "PLAY",
+                    "song",
+                    "忘记时间"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "合肥到上海可以到哪坐车？",
+            "asr_1best": "合肥到上海可以到哪坐车？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "Src",
+                    "合肥"
+                ],
+                [
+                    "QUERY",
+                    "Dest",
+                    "上海"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "九阴真经",
+            "asr_1best": "九阴真经",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "九阴真经"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "帮我查一下周杰伦的歌",
+            "asr_1best": "帮我查一下周杰伦的歌",
+            "semantic": [
+                [
+                    "SEARCH",
+                    "artist",
+                    "周杰伦"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "头晕该怎么办？",
+            "asr_1best": "头晕该怎么办？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "头晕"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "播七龙珠",
+            "asr_1best": "播七龙珠",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "七龙珠"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "找愤怒的小鸟",
+            "asr_1best": "找愤怒的小鸟",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "愤怒的小鸟"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "中超赛事预告，啊！",
+            "asr_1best": "中超赛事预告，啊！",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "中超"
+                ],
+                [
+                    "QUERY",
+                    "type",
+                    "预告"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "咸鸡，的制作方法。",
+            "asr_1best": "咸鸡，的制作方法。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "ingredient",
+                    "咸鸡"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "海南旅游卫视",
+            "asr_1best": "海南旅游卫视",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "旅游卫视"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查询后天成都到伦敦的航班",
+            "asr_1best": "查询后天成都到伦敦的航班",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startDate_date",
+                    "后天"
+                ],
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "成都"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "伦敦"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "酷狗音乐盒",
+            "asr_1best": "酷狗音乐盒",
+            "semantic": [
+                [
+                    "LAUNCH",
+                    "name",
+                    "酷狗音乐盒"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "潍坊到北京机票明天的",
+            "asr_1best": "潍坊到北京机票明天的",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "潍坊"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "北京"
+                ],
+                [
+                    "QUERY",
+                    "startDate_date",
+                    "明天"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "腿英文怎么说",
+            "asr_1best": "腿英文怎么说",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "target",
+                    "英文"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我要看新闻玩不？",
+            "asr_1best": "我要看新闻玩不？",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "晋江到温州的火车票",
+            "asr_1best": "晋江到温州的火车票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_area",
+                    "晋江"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "温州"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "薛平贵与王宝钏",
+            "asr_1best": "薛平贵与王宝钏",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "薛平贵与王宝钏"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "广西新闻网",
+            "asr_1best": "广西新闻网",
+            "semantic": [
+                [
+                    "OPEN",
+                    "name",
+                    "广西新闻网"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查下李宁公司的股票",
+            "asr_1best": "查下李宁公司的股票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "李宁"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "你不来一首涛声依旧，那你。",
+            "asr_1best": "你不来一首涛声依旧，那你。",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "涛声依旧"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "糖醋鲤鱼怎么做？而？",
+            "asr_1best": "糖醋鲤鱼怎么做？而？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "糖醋鲤鱼"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "那烤箱做面包怎么做？",
+            "asr_1best": "那烤箱做面包怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "面包"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "转发这条mail",
+            "asr_1best": "转发这条mail",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "披萨的做法",
+            "asr_1best": "披萨的做法",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "披萨"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "哦我想看中央一台",
+            "asr_1best": "哦我想看中央一台",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "中央一台"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "讲一个谜语，啊，你，哦。",
+            "asr_1best": "讲一个谜语，啊，你，哦。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "谜语"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "中国新闻网网站",
+            "asr_1best": "中国新闻网网站",
+            "semantic": [
+                [
+                    "OPEN",
+                    "name",
+                    "中国新闻网"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "炒鸡蛋，需要，哪些材料？",
+            "asr_1best": "炒鸡蛋，需要，哪些材料？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "炒鸡蛋"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "上海到北京的飞机航班",
+            "asr_1best": "上海到北京的飞机航班",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "上海"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "北京"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "咱们结婚吧什么时候播出",
+            "asr_1best": "咱们结婚吧什么时候播出",
+            "semantic": [
+                [
+                    "DATE_QUERY",
+                    "name",
+                    "咱们结婚吧"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查询4月1号从武汉到广州的航班",
+            "asr_1best": "查询4月1号从武汉到广州的航班",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startDate_date",
+                    "4月1号"
+                ],
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "武汉"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "广州"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "帮我调转到风云音乐频道",
+            "asr_1best": "帮我调转到风云音乐频道",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "风云音乐频道"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "出口在哪里英文怎么说",
+            "asr_1best": "出口在哪里英文怎么说",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "content",
+                    "出口在哪里"
+                ],
+                [
+                    "TRANSLATION",
+                    "target",
+                    "英文"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "豆沙包。",
+            "asr_1best": "豆沙包。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "豆沙包"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "捍卫者",
+            "asr_1best": "捍卫者",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "捍卫者"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "最近有什么新上映的电影啊？",
+            "asr_1best": "最近有什么新上映的电影啊？",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "搜索合肥左岸电影城。",
+            "asr_1best": "搜索合肥左岸电影城。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "theatre",
+                    "合肥左岸电影城"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我要上网打开百度",
+            "asr_1best": "我要上网打开百度",
+            "semantic": [
+                [
+                    "OPEN",
+                    "name",
+                    "百度"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "帮我查一下明天广州到北京的航班。",
+            "asr_1best": "帮我查一下明天广州到北京的航班。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startDate_date",
+                    "明天"
+                ],
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "广州"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "北京"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "打开昆明三六零手机网",
+            "asr_1best": "打开昆明三六零手机网",
+            "semantic": [
+                [
+                    "OPEN",
+                    "name",
+                    "昆明三六零手机网"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "下载汉化软件",
+            "asr_1best": "下载汉化软件",
+            "semantic": [
+                [
+                    "DOWNLOAD",
+                    "name",
+                    "汉化"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "失明了怎么办？",
+            "asr_1best": "失明了怎么办？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "失明"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "水果沙拉怎么做？",
+            "asr_1best": "水果沙拉怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "水果沙拉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "大肠癌",
+            "asr_1best": "大肠癌",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "大肠癌"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "怎么治疗牛皮癣",
+            "asr_1best": "怎么治疗牛皮癣",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "牛皮癣"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "请问红烧茄子怎么做？",
+            "asr_1best": "请问红烧茄子怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "红烧茄子"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "科教频道",
+            "asr_1best": "科教频道",
+            "semantic": [
+                [
+                    "PLAY",
+                    "category",
+                    "科教"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "赶紧推荐一部小说。",
+            "asr_1best": "赶紧推荐一部小说。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "去南昌的火车",
+            "asr_1best": "去南昌的火车",
+            "semantic": [
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "南昌"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "打石宝电话",
+            "asr_1best": "打石宝电话",
+            "semantic": [
+                [
+                    "DIAL",
+                    "name",
+                    "石宝"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "怎么治疗口腔溃疡呃呃呃",
+            "asr_1best": "怎么治疗口腔溃疡呃呃呃",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "口腔溃疡"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "那你背首唐诗给我听。",
+            "asr_1best": "那你背首唐诗给我听。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "你给我念一首李白的诗。",
+            "asr_1best": "你给我念一首李白的诗。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "李白"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "上海申花的赛程。",
+            "asr_1best": "上海申花的赛程。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "上海申花"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "把张玉娟的手机号码发送给吴伟",
+            "asr_1best": "把张玉娟的手机号码发送给吴伟",
+            "semantic": [
+                [
+                    "SENDCONTACTS",
+                    "name",
+                    "张玉娟"
+                ],
+                [
+                    "SENDCONTACTS",
+                    "category",
+                    "手机"
+                ],
+                [
+                    "SENDCONTACTS",
+                    "receiver",
+                    "吴伟"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查寻天龙集团的股票",
+            "asr_1best": "查寻天龙集团的股票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "天龙集团"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "想听牵手这首歌",
+            "asr_1best": "想听牵手这首歌",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "牵手"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "南京火车站到南京农业大学",
+            "asr_1best": "南京火车站到南京农业大学",
+            "semantic": [
+                [
+                    "ROUTE",
+                    "startLoc_city",
+                    "南京"
+                ],
+                [
+                    "ROUTE",
+                    "startLoc_poi",
+                    "火车站"
+                ],
+                [
+                    "ROUTE",
+                    "endLoc_poi",
+                    "南京农业大学"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查一下最近有什么电影？",
+            "asr_1best": "查一下最近有什么电影？",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "搜索湖南卫视直播。",
+            "asr_1best": "搜索湖南卫视直播。",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "湖南卫视"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查询昆明到合肥的火车",
+            "asr_1best": "查询昆明到合肥的火车",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "昆明"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "合肥"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "中超A组比赛结果分别是多少",
+            "asr_1best": "中超A组比赛结果分别是多少",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "中超"
+                ],
+                [
+                    "QUERY",
+                    "type",
+                    "结果"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "科大讯飞昨日成交价",
+            "asr_1best": "科大讯飞昨日成交价",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "科大讯飞"
+                ],
+                [
+                    "QUERY",
+                    "yesterday",
+                    "昨日"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "关于钓鱼岛的新闻进展",
+            "asr_1best": "关于钓鱼岛的新闻进展",
+            "semantic": [
+                [
+                    "PLAY",
+                    "keyword",
+                    "钓鱼岛"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "红烧猪脚",
+            "asr_1best": "红烧猪脚",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "红烧猪脚"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "去深圳怎么坐车？",
+            "asr_1best": "去深圳怎么坐车？",
+            "semantic": [
+                [
+                    "ROUTE",
+                    "endLoc_city",
+                    "深圳"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "呼叫a#二小姐",
+            "asr_1best": "呼叫a#二小姐",
+            "semantic": [
+                [
+                    "DIAL",
+                    "name",
+                    "二小姐"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "怎么做馒头",
+            "asr_1best": "怎么做馒头",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "馒头"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "发信息给盛吉",
+            "asr_1best": "发信息给盛吉",
+            "semantic": [
+                [
+                    "SEND",
+                    "name",
+                    "盛吉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查寻上海能源的股票",
+            "asr_1best": "查寻上海能源的股票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "上海能源"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "CCTV7军事农业",
+            "asr_1best": "CCTV7军事农业",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "CCTV7军事农业"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "搜索一下白居易的诗。",
+            "asr_1best": "搜索一下白居易的诗。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "白居易"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "打电话给王宇婕",
+            "asr_1best": "打电话给王宇婕",
+            "semantic": [
+                [
+                    "DIAL",
+                    "name",
+                    "王宇婕"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "camera360",
+            "asr_1best": "camera360",
+            "semantic": [
+                [
+                    "LAUNCH",
+                    "name",
+                    "camera360"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "字谜你。",
+            "asr_1best": "字谜你。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "字谜"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "打电话给贾青子",
+            "asr_1best": "打电话给贾青子",
+            "semantic": [
+                [
+                    "DIAL",
+                    "name",
+                    "贾青子"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "仓央嘉措的诗词。",
+            "asr_1best": "仓央嘉措的诗词。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "仓央嘉措"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "妈妈的花样年华",
+            "asr_1best": "妈妈的花样年华",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "妈妈的花样年华"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "青春期撞上更年期二",
+            "asr_1best": "青春期撞上更年期二",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "青春期撞上更年期二"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "西藏卫视",
+            "asr_1best": "西藏卫视",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "西藏卫视"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "湖南卫视现在演什么节目",
+            "asr_1best": "湖南卫视现在演什么节目",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "湖南卫视"
+                ],
+                [
+                    "QUERY",
+                    "datetime_time",
+                    "现在"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "那你查一下最近的热门电影是什么？",
+            "asr_1best": "那你查一下最近的热门电影是什么？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "timeDescr",
+                    "最近"
+                ],
+                [
+                    "QUERY",
+                    "popularity",
+                    "热门"
+                ],
+                [
+                    "QUERY",
+                    "category",
+                    "电影"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "中国新华网打开",
+            "asr_1best": "中国新华网打开",
+            "semantic": [
+                [
+                    "OPEN",
+                    "name",
+                    "新华网"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "制作酸梅汤怎么做？",
+            "asr_1best": "制作酸梅汤怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "酸梅汤"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "烤肉串。",
+            "asr_1best": "烤肉串。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "烤肉串"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "美国大使馆在哪",
+            "asr_1best": "美国大使馆在哪",
+            "semantic": [
+                [
+                    "POSITION",
+                    "location_poi",
+                    "美国大使馆"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给我来首好听的音乐",
+            "asr_1best": "给我来首好听的音乐",
+            "semantic": [
+                [
+                    "PLAY",
+                    "category",
+                    "好听"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "找一下非诚勿扰娱乐节目",
+            "asr_1best": "找一下非诚勿扰娱乐节目",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "非诚勿扰"
+                ],
+                [
+                    "QUERY",
+                    "tag",
+                    "娱乐"
+                ],
+                [
+                    "QUERY",
+                    "category",
+                    "节目"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "回锅肉。",
+            "asr_1best": "回锅肉。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "回锅肉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "干豆角怎么烧？",
+            "asr_1best": "干豆角怎么烧？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "ingredient",
+                    "干豆角"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "导航到石化小学",
+            "asr_1best": "导航到石化小学",
+            "semantic": [
+                [
+                    "ROUTE",
+                    "endLoc_poi",
+                    "石化小学"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "搜索电视剧爱情悠悠药草香在哪个频道首播？",
+            "asr_1best": "搜索电视剧爱情悠悠药草香在哪个频道首播？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "电视剧"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "爱情悠悠药草香"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "钓鱼岛新闻",
+            "asr_1best": "钓鱼岛新闻",
+            "semantic": [
+                [
+                    "PLAY",
+                    "keyword",
+                    "钓鱼岛"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查询沿途的KTV",
+            "asr_1best": "查询沿途的KTV",
+            "semantic": [
+                [
+                    "POSITION",
+                    "location_poi",
+                    "KTV"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "偏头痛怎么治？",
+            "asr_1best": "偏头痛怎么治？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "偏头痛"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "辣酸菜鱼怎么做了。",
+            "asr_1best": "辣酸菜鱼怎么做了。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "辣酸菜"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "来首甘露寺。",
+            "asr_1best": "来首甘露寺。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "甘露寺"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "中国新声代",
+            "asr_1best": "中国新声代",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "中国新声代"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "电视剧粘豆包",
+            "asr_1best": "电视剧粘豆包",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "电视剧"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "粘豆包"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "加，听新闻。",
+            "asr_1best": "加，听新闻。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我想听听今天的新闻。",
+            "asr_1best": "我想听听今天的新闻。",
+            "semantic": [
+                [
+                    "PLAY",
+                    "datetime_date",
+                    "今天"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "看一下中式传媒股票的涨跌幅",
+            "asr_1best": "看一下中式传媒股票的涨跌幅",
+            "semantic": [
+                [
+                    "RISERATE_QUERY",
+                    "name",
+                    "中式传媒"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给胡克发短信",
+            "asr_1best": "给胡克发短信",
+            "semantic": [
+                [
+                    "SEND",
+                    "name",
+                    "胡克"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给我打开mail",
+            "asr_1best": "给我打开mail",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "来首纳兰性德的词。",
+            "asr_1best": "来首纳兰性德的词。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "纳兰性德"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查寻科大讯飞的股",
+            "asr_1best": "查寻科大讯飞的股",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "科大讯飞"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "打开qq同步助手",
+            "asr_1best": "打开qq同步助手",
+            "semantic": [
+                [
+                    "LAUNCH",
+                    "name",
+                    "qq同步助手"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "从广州到贵阳市的航班",
+            "asr_1best": "从广州到贵阳市的航班",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "广州"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "贵阳"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "钛备份",
+            "asr_1best": "钛备份",
+            "semantic": [
+                [
+                    "LAUNCH",
+                    "name",
+                    "钛备份"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我昨天晚上的今日关注",
+            "asr_1best": "我昨天晚上的今日关注",
+            "semantic": [
+                [
+                    "QUERY",
+                    "datetime_date",
+                    "昨天"
+                ],
+                [
+                    "QUERY",
+                    "datetime_time",
+                    "晚上"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "今日关注"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "葫芦鸡怎么做？",
+            "asr_1best": "葫芦鸡怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "葫芦鸡"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "从二手车市场到八一广场怎么走",
+            "asr_1best": "从二手车市场到八一广场怎么走",
+            "semantic": [
+                [
+                    "ROUTE",
+                    "startLoc_poi",
+                    "二手车市场"
+                ],
+                [
+                    "ROUTE",
+                    "endLoc_poi",
+                    "八一广场"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "内裤用英语怎么说",
+            "asr_1best": "内裤用英语怎么说",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "content",
+                    "内裤"
+                ],
+                [
+                    "TRANSLATION",
+                    "target",
+                    "英语"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "王志排骨怎么做",
+            "asr_1best": "王志排骨怎么做",
+            "semantic": [
+                [
+                    "QUERY",
+                    "ingredient",
+                    "排骨"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "鱼香肉丝哦",
+            "asr_1best": "鱼香肉丝哦",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "鱼香肉丝"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "科大讯飞股票价格",
+            "asr_1best": "科大讯飞股票价格",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "科大讯飞"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "chc高清的节目单",
+            "asr_1best": "chc高清的节目单",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "chc高清"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "可不中央五套明天的节目单",
+            "asr_1best": "可不中央五套明天的节目单",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "中央五套"
+                ],
+                [
+                    "QUERY",
+                    "datetime_date",
+                    "明天"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "有没有新出的电影了。",
+            "asr_1best": "有没有新出的电影了。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "意大利面。",
+            "asr_1best": "意大利面。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "意大利面"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我要看巴拉小魔仙",
+            "asr_1best": "我要看巴拉小魔仙",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "巴拉小魔仙"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "。咳嗽",
+            "asr_1best": "。咳嗽",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "咳嗽"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "合肥的大润发在哪",
+            "asr_1best": "合肥的大润发在哪",
+            "semantic": [
+                [
+                    "POSITION",
+                    "location_city",
+                    "合肥"
+                ],
+                [
+                    "POSITION",
+                    "location_poi",
+                    "大润发"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "尽在不言中下一句是什么？",
+            "asr_1best": "尽在不言中下一句是什么？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "尽在不言中"
+                ],
+                [
+                    "QUERY",
+                    "queryField",
+                    "下一句"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "发烧好吗？",
+            "asr_1best": "发烧好吗？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "发烧"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "帮我查一下2013年2月8日开奖的15选5中奖号码",
+            "asr_1best": "帮我查一下2013年2月8日开奖的15选5中奖号码",
+            "semantic": [
+                [
+                    "NUMBER_QUERY",
+                    "datetime_date",
+                    "2013年2月8日"
+                ],
+                [
+                    "NUMBER_QUERY",
+                    "name",
+                    "15选5"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我给我念一首李白的诗吧？",
+            "asr_1best": "我给我念一首李白的诗吧？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "李白"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "武汉理工大学在哪",
+            "asr_1best": "武汉理工大学在哪",
+            "semantic": [
+                [
+                    "POSITION",
+                    "location_poi",
+                    "武汉理工大学"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "如何治疗颈椎病。",
+            "asr_1best": "如何治疗颈椎病。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "颈椎病"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "请打开qq",
+            "asr_1best": "请打开qq",
+            "semantic": [
+                [
+                    "LAUNCH",
+                    "name",
+                    "qq"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给我放首歌",
+            "asr_1best": "给我放首歌",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查一下新闻。",
+            "asr_1best": "查一下新闻。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "蓝猫龙骑团",
+            "asr_1best": "蓝猫龙骑团",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "蓝猫龙骑团"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "电视台在播什么节目",
+            "asr_1best": "电视台在播什么节目",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "电视剧火凤凰",
+            "asr_1best": "电视剧火凤凰",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "电视剧"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "火凤凰"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "来个谜语吧！",
+            "asr_1best": "来个谜语吧！",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "谜语"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "2012年美国公告牌音乐大奖颁奖礼",
+            "asr_1best": "2012年美国公告牌音乐大奖颁奖礼",
+            "semantic": [
+                [
+                    "QUERY",
+                    "datetime_date",
+                    "2012年"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "美国公告牌音乐大奖颁奖礼"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "请念一首毛泽东诗词。",
+            "asr_1best": "请念一首毛泽东诗词。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "毛泽东"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "说话，给我搜一下做苹果麦片粥是怎么做啊？",
+            "asr_1best": "说话，给我搜一下做苹果麦片粥是怎么做啊？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "苹果麦片粥"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "乳腺癌。",
+            "asr_1best": "乳腺癌。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "乳腺癌"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "呼叫浦蒲",
+            "asr_1best": "呼叫浦蒲",
+            "semantic": [
+                [
+                    "DIAL",
+                    "name",
+                    "浦蒲"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "颈椎病用什么药物治疗？",
+            "asr_1best": "颈椎病用什么药物治疗？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "颈椎病"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "看看有什么好新闻",
+            "asr_1best": "看看有什么好新闻",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "关注一下今天的欧洲杯新闻",
+            "asr_1best": "关注一下今天的欧洲杯新闻",
+            "semantic": [
+                [
+                    "PLAY",
+                    "datetime_date",
+                    "今天"
+                ],
+                [
+                    "PLAY",
+                    "keyword",
+                    "欧洲杯"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "到了有鲈鱼怎么做？",
+            "asr_1best": "到了有鲈鱼怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "ingredient",
+                    "鲈鱼"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "幻影忍者",
+            "asr_1best": "幻影忍者",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "幻影忍者"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "女人的颜色六十九集",
+            "asr_1best": "女人的颜色六十九集",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "女人的颜色"
+                ],
+                [
+                    "QUERY",
+                    "episode",
+                    "六十九集"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "CCTV农业",
+            "asr_1best": "CCTV农业",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "CCTV农业"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "多想听新闻，哦。",
+            "asr_1best": "多想听新闻，哦。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "哦哦，最新的电影。",
+            "asr_1best": "哦哦，最新的电影。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "福尔摩探案急翻译成英文",
+            "asr_1best": "福尔摩探案急翻译成英文",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "content",
+                    "福尔摩探案急"
+                ],
+                [
+                    "TRANSLATION",
+                    "target",
+                    "英文"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给王涛打电话",
+            "asr_1best": "给王涛打电话",
+            "semantic": [
+                [
+                    "DIAL",
+                    "name",
+                    "王涛"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "来首出师表",
+            "asr_1best": "来首出师表",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "出师表"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "凉拌海蜇怎么做好吃？",
+            "asr_1best": "凉拌海蜇怎么做好吃？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "凉拌海蜇"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "来一首不可以。",
+            "asr_1best": "来一首不可以。",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "不可以"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "桔子英文怎么说",
+            "asr_1best": "桔子英文怎么说",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "content",
+                    "桔子"
+                ],
+                [
+                    "TRANSLATION",
+                    "target",
+                    "英文"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "教我做馒头。",
+            "asr_1best": "教我做馒头。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "馒头"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "四川新闻网",
+            "asr_1best": "四川新闻网",
+            "semantic": [
+                [
+                    "OPEN",
+                    "name",
+                    "四川新闻网"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "十堰至武汉火车票",
+            "asr_1best": "十堰至武汉火车票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "十堰"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "武汉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查询宜春到南昌的火车列车时刻表",
+            "asr_1best": "查询宜春到南昌的火车列车时刻表",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "宜春"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "南昌"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "烧伤怎么治疗啊？",
+            "asr_1best": "烧伤怎么治疗啊？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "烧伤"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "中央电视台少儿频道大耳朵图图",
+            "asr_1best": "中央电视台少儿频道大耳朵图图",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "中央电视台少儿频道"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "大耳朵图图"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "蚝油生菜的做法。",
+            "asr_1best": "蚝油生菜的做法。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "蚝油生菜"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "从汕头到西安的汽车。",
+            "asr_1best": "从汕头到西安的汽车。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "Src",
+                    "汕头"
+                ],
+                [
+                    "QUERY",
+                    "Dest",
+                    "西安"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "温州到上海的车。",
+            "asr_1best": "温州到上海的车。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "Src",
+                    "温州"
+                ],
+                [
+                    "QUERY",
+                    "Dest",
+                    "上海"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "光阴",
+            "asr_1best": "光阴",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "光阴"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "发条短信给张亚东",
+            "asr_1best": "发条短信给张亚东",
+            "semantic": [
+                [
+                    "SEND",
+                    "name",
+                    "张亚东"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "乳腺炎。",
+            "asr_1best": "乳腺炎。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "乳腺炎"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "中信证券股票",
+            "asr_1best": "中信证券股票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "中信证券"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "晚上好用英语怎么说",
+            "asr_1best": "晚上好用英语怎么说",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "content",
+                    "晚上好"
+                ],
+                [
+                    "TRANSLATION",
+                    "target",
+                    "英语"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "鸡煲啊！",
+            "asr_1best": "鸡煲啊！",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "鸡煲"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "在线观看中央七套",
+            "asr_1best": "在线观看中央七套",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "中央七套"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "播放非诚勿扰",
+            "asr_1best": "播放非诚勿扰",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "非诚勿扰"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "播放最近的新闻。",
+            "asr_1best": "播放最近的新闻。",
+            "semantic": [
+                [
+                    "PLAY",
+                    "datetime_date",
+                    "最近"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我想听首唐诗。",
+            "asr_1best": "我想听首唐诗。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "过油肉土豆片怎么做？",
+            "asr_1best": "过油肉土豆片怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "过油肉土豆片"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "牛肉怎么煮才好吃？你？",
+            "asr_1best": "牛肉怎么煮才好吃？你？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "ingredient",
+                    "牛肉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "来一首咏柳。",
+            "asr_1best": "来一首咏柳。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "咏柳"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我想看变形金刚三",
+            "asr_1best": "我想看变形金刚三",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "变形金刚三"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "现在看看有最新的新闻吗？",
+            "asr_1best": "现在看看有最新的新闻吗？",
+            "semantic": [
+                [
+                    "PLAY",
+                    "datetime_time",
+                    "现在"
+                ],
+                [
+                    "PLAY",
+                    "keyword",
+                    "最新"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给黄卫国发短信",
+            "asr_1best": "给黄卫国发短信",
+            "semantic": [
+                [
+                    "SEND",
+                    "name",
+                    "黄卫国"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "明天晚上湖南卫视演什么电视剧",
+            "asr_1best": "明天晚上湖南卫视演什么电视剧",
+            "semantic": [
+                [
+                    "QUERY",
+                    "datetime_date",
+                    "明天"
+                ],
+                [
+                    "QUERY",
+                    "datetime_time",
+                    "晚上"
+                ],
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "湖南卫视"
+                ],
+                [
+                    "QUERY",
+                    "category",
+                    "电视剧"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "做红烧肉要哪些材料呀！",
+            "asr_1best": "做红烧肉要哪些材料呀！",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "红烧肉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "如何做西红柿炒蛋。",
+            "asr_1best": "如何做西红柿炒蛋。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "西红柿炒蛋"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "小鸡炖蘑菇的做法爸",
+            "asr_1best": "小鸡炖蘑菇的做法爸",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "小鸡炖蘑菇"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给我念首春晓。",
+            "asr_1best": "给我念首春晓。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "春晓"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "小兵张嘎电影儿",
+            "asr_1best": "小兵张嘎电影儿",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "小兵张嘎"
+                ],
+                [
+                    "QUERY",
+                    "category",
+                    "电影"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "蒜茄子怎么做？",
+            "asr_1best": "蒜茄子怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "蒜茄子"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "豆腐花的做法。",
+            "asr_1best": "豆腐花的做法。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "豆腐花"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查寻标兵的号码",
+            "asr_1best": "查寻标兵的号码",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "寻标兵"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "讯飞语点请你搜索一下番茄炒蛋怎么做？",
+            "asr_1best": "讯飞语点请你搜索一下番茄炒蛋怎么做？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "番茄炒蛋"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "水饺的做法。",
+            "asr_1best": "水饺的做法。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "水饺"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "破伤风该怎么处理",
+            "asr_1best": "破伤风该怎么处理",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "破伤风"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "到薛城区怎么走",
+            "asr_1best": "到薛城区怎么走",
+            "semantic": [
+                [
+                    "ROUTE",
+                    "endLoc_area",
+                    "薛城区"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "唐诗登高。",
+            "asr_1best": "唐诗登高。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "登高"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "来一首歌尔勤县",
+            "asr_1best": "来一首歌尔勤县",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "那给我背静夜思。",
+            "asr_1best": "那给我背静夜思。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "静夜思"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "从这里去瑞金路怎么走",
+            "asr_1best": "从这里去瑞金路怎么走",
+            "semantic": [
+                [
+                    "ROUTE",
+                    "endLoc_poi",
+                    "瑞金路"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "虾的英文怎么说",
+            "asr_1best": "虾的英文怎么说",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "target",
+                    "英文"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我要听稻香",
+            "asr_1best": "我要听稻香",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "稻香"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "蒸鱼。",
+            "asr_1best": "蒸鱼。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "蒸鱼"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "北京到成都的汽车时刻表。",
+            "asr_1best": "北京到成都的汽车时刻表。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "Src",
+                    "北京"
+                ],
+                [
+                    "QUERY",
+                    "Dest",
+                    "成都"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "怎样做糖醋排骨。",
+            "asr_1best": "怎样做糖醋排骨。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "糖醋排骨"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "翻译光大银行",
+            "asr_1best": "翻译光大银行",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "content",
+                    "光大银行"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "嗯我想知道曲阜在什么地方",
+            "asr_1best": "嗯我想知道曲阜在什么地方",
+            "semantic": [
+                [
+                    "POSITION",
+                    "location_area",
+                    "曲阜"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "帮我搜一下中超3月份的对阵情况",
+            "asr_1best": "帮我搜一下中超3月份的对阵情况",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "中超"
+                ],
+                [
+                    "QUERY",
+                    "datetime_date",
+                    "3月份"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "讲个猜谜语的。",
+            "asr_1best": "讲个猜谜语的。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "谜语"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "二十五日去深圳的航班",
+            "asr_1best": "二十五日去深圳的航班",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startDate_date",
+                    "二十五日"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "深圳"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "魔神战记",
+            "asr_1best": "魔神战记",
+            "semantic": [
+                [
+                    "LAUNCH",
+                    "name",
+                    "魔神战记"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "湖北卫视今天下午六点以后开始播男生女生向前冲",
+            "asr_1best": "湖北卫视今天下午六点以后开始播男生女生向前冲",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "湖北卫视"
+                ],
+                [
+                    "QUERY",
+                    "datetime_date",
+                    "今天"
+                ],
+                [
+                    "QUERY",
+                    "datetime_time",
+                    "下午六点以后"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "男生女生向前冲"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "开封到信阳的火车",
+            "asr_1best": "开封到信阳的火车",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "开封"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "信阳"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "远教四台",
+            "asr_1best": "远教四台",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "远教四台"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "古墓丽影",
+            "asr_1best": "古墓丽影",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "古墓丽影"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我想看一下科大讯飞的股票",
+            "asr_1best": "我想看一下科大讯飞的股票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "科大讯飞"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "都市言情小说何以笙箫默",
+            "asr_1best": "都市言情小说何以笙箫默",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "都市言情"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "何以笙箫默"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "放歌，天亮了。",
+            "asr_1best": "放歌，天亮了。",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "天亮了"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "正韵打开相机",
+            "asr_1best": "正韵打开相机",
+            "semantic": [
+                [
+                    "LAUNCH",
+                    "name",
+                    "相机"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "素鸡",
+            "asr_1best": "素鸡",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "素鸡"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "12月9日北京卫视节目单",
+            "asr_1best": "12月9日北京卫视节目单",
+            "semantic": [
+                [
+                    "QUERY",
+                    "datetime_date",
+                    "12月9日"
+                ],
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "北京卫视"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "上一期双色球开什么",
+            "asr_1best": "上一期双色球开什么",
+            "semantic": [
+                [
+                    "NUMBER_QUERY",
+                    "relIssue",
+                    "上一期"
+                ],
+                [
+                    "NUMBER_QUERY",
+                    "name",
+                    "双色球"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "做糖醋排骨",
+            "asr_1best": "做糖醋排骨",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "糖醋排骨"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "背首静夜思来听一下。",
+            "asr_1best": "背首静夜思来听一下。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "静夜思"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "鱼香肉丝，怎么做？买？",
+            "asr_1best": "鱼香肉丝，怎么做？买？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "鱼香肉丝"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "播放音乐喜帖街。",
+            "asr_1best": "播放音乐喜帖街。",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "喜帖街"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "播放断点",
+            "asr_1best": "播放断点",
+            "semantic": [
+                [
+                    "PLAY",
+                    "song",
+                    "断点"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "宁波一台",
+            "asr_1best": "宁波一台",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "宁波一台"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查一下明天青岛飞往上海的飞机都有哪一些都是几点的",
+            "asr_1best": "查一下明天青岛飞往上海的飞机都有哪一些都是几点的",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startDate_date",
+                    "明天"
+                ],
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "青岛"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "上海"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我想全部回应",
+            "asr_1best": "我想全部回应",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "红烧排骨怎么做的吗？",
+            "asr_1best": "红烧排骨怎么做的吗？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "红烧排骨"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "湖北电视台高清",
+            "asr_1best": "湖北电视台高清",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "湖北电视台"
+                ],
+                [
+                    "PLAY",
+                    "resolution",
+                    "高清"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "北京财经台",
+            "asr_1best": "北京财经台",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "北京财经台"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "甲鱼，邓鸡，如何制作。",
+            "asr_1best": "甲鱼，邓鸡，如何制作。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "周慧的电话。",
+            "asr_1best": "周慧的电话。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "周慧"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "把李文鼎的号码发给谢服全",
+            "asr_1best": "把李文鼎的号码发给谢服全",
+            "semantic": [
+                [
+                    "SENDCONTACTS",
+                    "name",
+                    "李文鼎"
+                ],
+                [
+                    "SENDCONTACTS",
+                    "receiver",
+                    "谢服全"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "若相惜不弃下一句是什么？",
+            "asr_1best": "若相惜不弃下一句是什么？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "keyword",
+                    "若相惜不弃"
+                ],
+                [
+                    "QUERY",
+                    "queryField",
+                    "下一句"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "去北京有什么飞机",
+            "asr_1best": "去北京有什么飞机",
+            "semantic": [
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "北京"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "网上最火的小说有哪些",
+            "asr_1best": "网上最火的小说有哪些",
+            "semantic": [
+                [
+                    "QUERY",
+                    "popularity",
+                    "最火"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查一下南京到上海的火车注意谢谢",
+            "asr_1best": "查一下南京到上海的火车注意谢谢",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "南京"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "上海"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "如何炒花生。",
+            "asr_1best": "如何炒花生。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "炒花生"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "杭州南站到龙游的火车有哪几班",
+            "asr_1best": "杭州南站到龙游的火车有哪几班",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_poi",
+                    "杭州南站"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_area",
+                    "龙游"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给李慧发个短信说我要回家",
+            "asr_1best": "给李慧发个短信说我要回家",
+            "semantic": [
+                [
+                    "SEND",
+                    "name",
+                    "李慧"
+                ],
+                [
+                    "SEND",
+                    "content",
+                    "我要回家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "龙岩新闻",
+            "asr_1best": "龙岩新闻",
+            "semantic": [
+                [
+                    "PLAY",
+                    "location_city",
+                    "龙岩"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "打电话给地瓜",
+            "asr_1best": "打电话给地瓜",
+            "semantic": [
+                [
+                    "DIAL",
+                    "name",
+                    "地瓜"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "土豆怎么做才好吃？",
+            "asr_1best": "土豆怎么做才好吃？",
+            "semantic": [
+                [
+                    "QUERY",
+                    "ingredient",
+                    "土豆"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "很想看安徽卫视来着",
+            "asr_1best": "很想看安徽卫视来着",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "安徽卫视"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给小阳发短信",
+            "asr_1best": "给小阳发短信",
+            "semantic": [
+                [
+                    "SEND",
+                    "name",
+                    "小阳"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "南京熊猫股票",
+            "asr_1best": "南京熊猫股票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "南京熊猫"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "帮我查查北京电视台-6上周六开始美味的想念呢",
+            "asr_1best": "帮我查查北京电视台-6上周六开始美味的想念呢",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "北京电视台-6"
+                ],
+                [
+                    "QUERY",
+                    "datetime_date",
+                    "上周六"
+                ],
+                [
+                    "QUERY",
+                    "name",
+                    "美味的想念"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "k新闻想听新闻。",
+            "asr_1best": "k新闻想听新闻。",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "先锋乒羽",
+            "asr_1best": "先锋乒羽",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "先锋乒羽"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "李白的诗词",
+            "asr_1best": "李白的诗词",
+            "semantic": [
+                [
+                    "QUERY",
+                    "author",
+                    "李白"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "你叫什么名字英文怎么说",
+            "asr_1best": "你叫什么名字英文怎么说",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "content",
+                    "你叫什么名字"
+                ],
+                [
+                    "TRANSLATION",
+                    "target",
+                    "英文"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "红烧肉怎么煮啊",
+            "asr_1best": "红烧肉怎么煮啊",
+            "semantic": [
+                [
+                    "QUERY",
+                    "dishName",
+                    "红烧肉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "找一首歌叫斑马斑马",
+            "asr_1best": "找一首歌叫斑马斑马",
+            "semantic": [
+                [
+                    "SEARCH",
+                    "song",
+                    "斑马斑马"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "橙子的英文怎么说",
+            "asr_1best": "橙子的英文怎么说",
+            "semantic": [
+                [
+                    "TRANSLATION",
+                    "content",
+                    "橙子"
+                ],
+                [
+                    "TRANSLATION",
+                    "target",
+                    "英文"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "帮我查一下从济南到福州的机票",
+            "asr_1best": "帮我查一下从济南到福州的机票",
+            "semantic": [
+                [
+                    "QUERY",
+                    "startLoc_city",
+                    "济南"
+                ],
+                [
+                    "QUERY",
+                    "endLoc_city",
+                    "福州"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查找卢米埃银泰电影院有播放什么好看的电影吗",
+            "asr_1best": "查找卢米埃银泰电影院有播放什么好看的电影吗",
+            "semantic": [
+                [
+                    "QUERY",
+                    "theatre",
+                    "卢米埃银泰电影院"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "我要看图文小说",
+            "asr_1best": "我要看图文小说",
+            "semantic": [
+                [
+                    "QUERY",
+                    "category",
+                    "图文"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "贺岁片",
+            "asr_1best": "贺岁片",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tag",
+                    "贺岁"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "湖北电视台",
+            "asr_1best": "湖北电视台",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "湖北电视台"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "铁甲钢拳",
+            "asr_1best": "铁甲钢拳",
+            "semantic": [
+                [
+                    "QUERY",
+                    "name",
+                    "铁甲钢拳"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "把哥哥的电话发给殷龙",
+            "asr_1best": "把哥哥的电话发给殷龙",
+            "semantic": [
+                [
+                    "SENDCONTACTS",
+                    "name",
+                    "哥哥"
+                ],
+                [
+                    "SENDCONTACTS",
+                    "receiver",
+                    "殷龙"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "浙江台",
+            "asr_1best": "浙江台",
+            "semantic": [
+                [
+                    "PLAY",
+                    "name",
+                    "浙江台"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "现在打开你的官网",
+            "asr_1best": "现在打开你的官网",
+            "semantic": [
+                [
+                    "OPEN",
+                    "name",
+                    "你的官网"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "给熊媛媛打电话",
+            "asr_1best": "给熊媛媛打电话",
+            "semantic": [
+                [
+                    "DIAL",
+                    "name",
+                    "熊媛媛"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "随便给我放几首歌",
+            "asr_1best": "随便给我放几首歌",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "陈娴TCL股票是涨还是跌了",
+            "asr_1best": "陈娴TCL股票是涨还是跌了",
+            "semantic": [
+                [
+                    "RISERATE_QUERY",
+                    "name",
+                    "TCL"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "牛肉的做法。",
+            "asr_1best": "牛肉的做法。",
+            "semantic": [
+                [
+                    "QUERY",
+                    "ingredient",
+                    "牛肉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "放首歌听一下你好",
+            "asr_1best": "放首歌听一下你好",
+            "semantic": []
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "那中央六台明天演什么节目",
+            "asr_1best": "那中央六台明天演什么节目",
+            "semantic": [
+                [
+                    "QUERY",
+                    "tvchannel",
+                    "中央六台"
+                ],
+                [
+                    "QUERY",
+                    "datetime_date",
+                    "明天"
+                ]
+            ]
+        }
+    ]
+]

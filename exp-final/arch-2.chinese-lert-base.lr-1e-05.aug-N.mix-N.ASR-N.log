@@ -1,0 +1,21 @@
+Use pretrained model: hfl/chinese-lert-base
+Dataset size: train -> 5119
+Load dataset and database finished, cost 4.5390s ...
+Dataset size: dev -> 895
+Total training steps: 16000
+Start training ......
+Training: 	Epoch: 0	Time: 19.8465	Training Loss: 1.8612	Sep Loss: 0.0000	Tag Loss: 0.0000
+Use pretrained model: hfl/chinese-lert-base
+Dataset size: train -> 5119
+Load dataset and database finished, cost 4.6856s ...
+Dataset size: dev -> 895
+Total training steps: 16000
+Start training ......
+Training: 	Epoch: 0	Time: 19.9399	Training Loss: 1.8612	Sep Loss: 0.0000	Tag Loss: 0.0000
+Use pretrained model: hfl/chinese-lert-base
+Dataset size: train -> 5119
+Load dataset and database finished, cost 4.1498s ...
+Dataset size: dev -> 895
+Total training steps: 16000
+Start training ......
+Training: 	Epoch: 0	Time: 19.9814	Training Loss: 1.8612	Sep Loss: 0.0000	Tag Loss: 0.0000

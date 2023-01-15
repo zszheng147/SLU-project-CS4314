@@ -29,15 +29,21 @@ train_path = os.path.join(args.dataroot, args.train_path)
 extend_cais, extend_ecdt = False, False
 train_path_cais, train_path_ecdt = None, None
 
+dev_path_cais, dev_path_ecdt = None, None
 if args.train_path_cais is not None:
     train_path_cais = os.path.join(args.dataroot, args.train_path_cais)
+    # dev_path_cais = os.path.join(args.dataroot, 'cais_development.json')
     extend_cais = True
 if args.train_path_ecdt is not None:
     train_path_ecdt = os.path.join(args.dataroot, args.train_path_ecdt)
+    # dev_path_ecdt = os.path.join(args.dataroot, 'ecdt_development.json')
     extend_ecdt = True
 
 dev_path = os.path.join(args.dataroot, 'development.json')
 model_name=args.model_name
+# args.train_mix = eval(args.train_mix)
+# args.use_asr = eval(args.use_asr)
+# args.architecture = int(args.architecture)
 ###set logger begin
 
 # Set the logging level
@@ -58,7 +64,7 @@ else:
     else:
         info += 'mix-N.ASR-N'
 
-file_path = os.path.join("exp", f'{info}.log')
+file_path = os.path.join(args.info, f'{info}.log') #!
 
 # Check if the directory exists
 if not os.path.exists(os.path.dirname(file_path)):
@@ -79,7 +85,7 @@ Example.configuration(args.dataroot, train_path=train_path, \
                         word2vec_path=args.word2vec_path, tokenizer_name=model_name,\
                             extend_cais=extend_cais, extend_ecdt=extend_ecdt)
 if args.train_mix: # 交替训练
-    assert args.use_asr == 'True', "please make sure loading asr data before training"
+    assert args.use_asr == 1, "please make sure loading asr data before training"
 
 if not args.testing:
     if args.use_asr:
@@ -88,7 +94,7 @@ if not args.testing:
     train_dataset = Example.load_dataset(train_path, train_path_cais, train_path_ecdt, use_asr=args.use_asr)
     logger.info(f"Dataset size: train -> {len(train_dataset)}")
 
-dev_dataset = Example.load_dataset(dev_path, use_asr=True)
+dev_dataset = Example.load_dataset(dev_path, dev_path_cais, dev_path_ecdt, use_asr=True)
 logger.info("Load dataset and database finished, cost %.4fs ..." % (time.time() - start_time))
 logger.info(f"Dataset size: dev -> {len(dev_dataset)}")
 
@@ -101,8 +107,8 @@ args.tag_pad_idx = Example.label_vocab.convert_tag_to_idx(PAD)
 
 
 # model = SLUTagging(args).to(device)
-architectures = [SLUTaggingBERT, SLUTaggingBERTCascaded, SLUTaggingBERTMultiHead]
-model = architectures[int(args.architecture)](args).to(device)
+architectures = [SLUTaggingBERT, SLUTaggingBERTCascaded, SLUTaggingBERTMultiHead, SLUTagging]
+model = architectures[args.architecture](args).to(device)
 # if args.architecture == 0:
 #     Example.word2vec.load_embeddings(model.word_embed, Example.word_vocab, device=device)
 
@@ -218,7 +224,7 @@ if not args.testing:
                 'epoch': i, 'model': model.state_dict(),
                 'optim': optimizer.state_dict(),
             }, open('model.bin', 'wb'))
-            logger.info('NEW BEST MODEL: \tEpoch: %d\tDev loss: %.4f\tDev acc: %.2f\tDev fscore(p/r/f): (%.2f/%.2f/%.2f)' % (i, dev_loss, dev_acc, dev_fscore['precision'], dev_fscore['recall'], dev_fscore['fscore']))
+        logger.info('NEW BEST MODEL: \tEpoch: %d\tDev loss: %.4f\tDev acc: %.2f\tDev fscore(p/r/f): (%.2f/%.2f/%.2f)' % (i, dev_loss, dev_acc, dev_fscore['precision'], dev_fscore['recall'], dev_fscore['fscore']))
 
     logger.info('FINAL BEST RESULT: \tEpoch: %d\tDev loss: %.4f\tDev acc: %.4f\tDev fscore(p/r/f): (%.4f/%.4f/%.4f)' % (best_result['iter'], best_result['dev_loss'], best_result['dev_acc'], best_result['dev_f1']['precision'], best_result['dev_f1']['recall'], best_result['dev_f1']['fscore']))
 else:

@@ -1,0 +1,307 @@
+Use pretrained model: hfl/chinese-bert-wwm-ext
+Dataset size: train -> 5119
+Load dataset and database finished, cost 5.0190s ...
+Dataset size: dev -> 895
+Total training steps: 3200
+Start training ......
+Training: 	Epoch: 0	Time: 10.5468	Training Loss: 3.8181	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 0	Time: 0.3701	Dev acc: 6.70	Dev fscore(p/r/f): (0.13/0.10/0.12)
+NEW BEST MODEL: 	Epoch: 0	Dev loss: 3.6404	Dev acc: 6.70	Dev fscore(p/r/f): (0.13/0.10/0.12)
+Training: 	Epoch: 1	Time: 10.0759	Training Loss: 2.4223	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 1	Time: 0.3319	Dev acc: 14.64	Dev fscore(p/r/f): (0.00/0.00/0.00)
+NEW BEST MODEL: 	Epoch: 1	Dev loss: 3.0671	Dev acc: 14.64	Dev fscore(p/r/f): (0.00/0.00/0.00)
+Training: 	Epoch: 2	Time: 9.6782	Training Loss: 2.0145	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 2	Time: 0.3387	Dev acc: 37.32	Dev fscore(p/r/f): (32.05/22.63/26.53)
+NEW BEST MODEL: 	Epoch: 2	Dev loss: 2.6097	Dev acc: 37.32	Dev fscore(p/r/f): (32.05/22.63/26.53)
+Training: 	Epoch: 3	Time: 10.0426	Training Loss: 1.3482	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 3	Time: 0.3496	Dev acc: 43.80	Dev fscore(p/r/f): (39.76/38.69/39.22)
+NEW BEST MODEL: 	Epoch: 3	Dev loss: 2.2659	Dev acc: 43.80	Dev fscore(p/r/f): (39.76/38.69/39.22)
+Training: 	Epoch: 4	Time: 10.1570	Training Loss: 1.0079	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 4	Time: 0.3355	Dev acc: 50.73	Dev fscore(p/r/f): (42.45/46.92/44.58)
+NEW BEST MODEL: 	Epoch: 4	Dev loss: 2.1707	Dev acc: 50.73	Dev fscore(p/r/f): (42.45/46.92/44.58)
+Training: 	Epoch: 5	Time: 9.5642	Training Loss: 0.8122	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 5	Time: 0.3565	Dev acc: 59.33	Dev fscore(p/r/f): (55.17/56.73/55.94)
+NEW BEST MODEL: 	Epoch: 5	Dev loss: 2.1621	Dev acc: 59.33	Dev fscore(p/r/f): (55.17/56.73/55.94)
+Training: 	Epoch: 6	Time: 9.9297	Training Loss: 0.6821	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 6	Time: 0.3590	Dev acc: 58.88	Dev fscore(p/r/f): (53.05/56.20/54.58)
+NEW BEST MODEL: 	Epoch: 6	Dev loss: 2.1493	Dev acc: 58.88	Dev fscore(p/r/f): (53.05/56.20/54.58)
+Training: 	Epoch: 7	Time: 10.0465	Training Loss: 0.5800	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 7	Time: 0.3773	Dev acc: 66.82	Dev fscore(p/r/f): (68.01/65.17/66.56)
+NEW BEST MODEL: 	Epoch: 7	Dev loss: 2.1363	Dev acc: 66.82	Dev fscore(p/r/f): (68.01/65.17/66.56)
+Training: 	Epoch: 8	Time: 10.4716	Training Loss: 0.4797	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 8	Time: 0.3838	Dev acc: 69.94	Dev fscore(p/r/f): (71.88/68.51/70.15)
+NEW BEST MODEL: 	Epoch: 8	Dev loss: 2.0595	Dev acc: 69.94	Dev fscore(p/r/f): (71.88/68.51/70.15)
+Training: 	Epoch: 9	Time: 9.8958	Training Loss: 0.4075	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 9	Time: 0.3652	Dev acc: 69.83	Dev fscore(p/r/f): (71.72/72.99/72.35)
+NEW BEST MODEL: 	Epoch: 9	Dev loss: 2.0998	Dev acc: 69.83	Dev fscore(p/r/f): (71.72/72.99/72.35)
+Training: 	Epoch: 10	Time: 9.9628	Training Loss: 0.3333	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 10	Time: 0.3837	Dev acc: 73.41	Dev fscore(p/r/f): (75.16/75.70/75.43)
+NEW BEST MODEL: 	Epoch: 10	Dev loss: 2.0623	Dev acc: 73.41	Dev fscore(p/r/f): (75.16/75.70/75.43)
+Training: 	Epoch: 11	Time: 10.5556	Training Loss: 0.2996	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 11	Time: 0.3460	Dev acc: 72.74	Dev fscore(p/r/f): (74.27/76.75/75.49)
+NEW BEST MODEL: 	Epoch: 11	Dev loss: 2.2350	Dev acc: 72.74	Dev fscore(p/r/f): (74.27/76.75/75.49)
+Training: 	Epoch: 12	Time: 9.7131	Training Loss: 0.2706	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 12	Time: 0.3349	Dev acc: 73.63	Dev fscore(p/r/f): (75.15/77.27/76.20)
+NEW BEST MODEL: 	Epoch: 12	Dev loss: 2.1824	Dev acc: 73.63	Dev fscore(p/r/f): (75.15/77.27/76.20)
+Training: 	Epoch: 13	Time: 9.9269	Training Loss: 0.2407	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 13	Time: 0.3358	Dev acc: 72.85	Dev fscore(p/r/f): (73.47/77.69/75.52)
+NEW BEST MODEL: 	Epoch: 13	Dev loss: 2.4603	Dev acc: 72.85	Dev fscore(p/r/f): (73.47/77.69/75.52)
+Training: 	Epoch: 14	Time: 9.9511	Training Loss: 0.2201	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 14	Time: 0.3375	Dev acc: 74.08	Dev fscore(p/r/f): (76.55/77.27/76.91)
+NEW BEST MODEL: 	Epoch: 14	Dev loss: 2.0819	Dev acc: 74.08	Dev fscore(p/r/f): (76.55/77.27/76.91)
+Training: 	Epoch: 15	Time: 9.9342	Training Loss: 0.2017	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 15	Time: 0.3384	Dev acc: 74.97	Dev fscore(p/r/f): (77.24/78.21/77.72)
+NEW BEST MODEL: 	Epoch: 15	Dev loss: 2.2845	Dev acc: 74.97	Dev fscore(p/r/f): (77.24/78.21/77.72)
+Training: 	Epoch: 16	Time: 9.5920	Training Loss: 0.1816	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 16	Time: 0.3351	Dev acc: 74.19	Dev fscore(p/r/f): (76.16/78.94/77.52)
+NEW BEST MODEL: 	Epoch: 16	Dev loss: 2.3662	Dev acc: 74.19	Dev fscore(p/r/f): (76.16/78.94/77.52)
+Training: 	Epoch: 17	Time: 9.4704	Training Loss: 0.1656	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 17	Time: 0.3364	Dev acc: 73.97	Dev fscore(p/r/f): (75.96/80.08/77.97)
+NEW BEST MODEL: 	Epoch: 17	Dev loss: 2.4088	Dev acc: 73.97	Dev fscore(p/r/f): (75.96/80.08/77.97)
+Training: 	Epoch: 18	Time: 9.4660	Training Loss: 0.1499	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 18	Time: 0.3353	Dev acc: 75.08	Dev fscore(p/r/f): (77.99/80.19/79.07)
+NEW BEST MODEL: 	Epoch: 18	Dev loss: 2.4163	Dev acc: 75.08	Dev fscore(p/r/f): (77.99/80.19/79.07)
+Training: 	Epoch: 19	Time: 9.9753	Training Loss: 0.1455	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 19	Time: 0.3371	Dev acc: 76.54	Dev fscore(p/r/f): (79.26/80.50/79.88)
+NEW BEST MODEL: 	Epoch: 19	Dev loss: 2.3388	Dev acc: 76.54	Dev fscore(p/r/f): (79.26/80.50/79.88)
+Training: 	Epoch: 20	Time: 10.0483	Training Loss: 0.1331	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 20	Time: 0.3383	Dev acc: 75.87	Dev fscore(p/r/f): (78.18/80.71/79.43)
+NEW BEST MODEL: 	Epoch: 20	Dev loss: 2.4574	Dev acc: 75.87	Dev fscore(p/r/f): (78.18/80.71/79.43)
+Training: 	Epoch: 21	Time: 9.9538	Training Loss: 0.1221	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 21	Time: 0.3367	Dev acc: 76.54	Dev fscore(p/r/f): (79.77/79.77/79.77)
+NEW BEST MODEL: 	Epoch: 21	Dev loss: 2.3442	Dev acc: 76.54	Dev fscore(p/r/f): (79.77/79.77/79.77)
+Training: 	Epoch: 22	Time: 9.9009	Training Loss: 0.1193	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 22	Time: 0.3343	Dev acc: 76.87	Dev fscore(p/r/f): (80.27/80.19/80.23)
+NEW BEST MODEL: 	Epoch: 22	Dev loss: 2.2888	Dev acc: 76.87	Dev fscore(p/r/f): (80.27/80.19/80.23)
+Training: 	Epoch: 23	Time: 9.7206	Training Loss: 0.1158	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 23	Time: 0.3352	Dev acc: 76.31	Dev fscore(p/r/f): (80.14/81.23/80.68)
+NEW BEST MODEL: 	Epoch: 23	Dev loss: 2.4142	Dev acc: 76.31	Dev fscore(p/r/f): (80.14/81.23/80.68)
+Training: 	Epoch: 24	Time: 9.7576	Training Loss: 0.1022	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 24	Time: 0.3358	Dev acc: 75.31	Dev fscore(p/r/f): (77.96/81.13/79.51)
+NEW BEST MODEL: 	Epoch: 24	Dev loss: 2.6377	Dev acc: 75.31	Dev fscore(p/r/f): (77.96/81.13/79.51)
+Training: 	Epoch: 25	Time: 9.6288	Training Loss: 0.0980	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 25	Time: 0.3349	Dev acc: 76.31	Dev fscore(p/r/f): (79.36/80.60/79.98)
+NEW BEST MODEL: 	Epoch: 25	Dev loss: 2.4514	Dev acc: 76.31	Dev fscore(p/r/f): (79.36/80.60/79.98)
+Training: 	Epoch: 26	Time: 10.0775	Training Loss: 0.0933	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 26	Time: 0.3483	Dev acc: 76.76	Dev fscore(p/r/f): (79.65/81.65/80.64)
+NEW BEST MODEL: 	Epoch: 26	Dev loss: 2.5553	Dev acc: 76.76	Dev fscore(p/r/f): (79.65/81.65/80.64)
+Training: 	Epoch: 27	Time: 10.1254	Training Loss: 0.0842	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 27	Time: 0.3446	Dev acc: 76.54	Dev fscore(p/r/f): (79.01/81.23/80.10)
+NEW BEST MODEL: 	Epoch: 27	Dev loss: 2.6510	Dev acc: 76.54	Dev fscore(p/r/f): (79.01/81.23/80.10)
+Training: 	Epoch: 28	Time: 10.3386	Training Loss: 0.0808	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 28	Time: 0.3537	Dev acc: 76.76	Dev fscore(p/r/f): (79.41/81.23/80.31)
+NEW BEST MODEL: 	Epoch: 28	Dev loss: 2.6670	Dev acc: 76.76	Dev fscore(p/r/f): (79.41/81.23/80.31)
+Training: 	Epoch: 29	Time: 9.9205	Training Loss: 0.0721	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 29	Time: 0.3770	Dev acc: 76.42	Dev fscore(p/r/f): (79.03/81.75/80.37)
+NEW BEST MODEL: 	Epoch: 29	Dev loss: 2.7622	Dev acc: 76.42	Dev fscore(p/r/f): (79.03/81.75/80.37)
+Training: 	Epoch: 30	Time: 9.7524	Training Loss: 0.0725	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 30	Time: 0.3575	Dev acc: 76.76	Dev fscore(p/r/f): (79.26/80.92/80.08)
+NEW BEST MODEL: 	Epoch: 30	Dev loss: 2.6308	Dev acc: 76.76	Dev fscore(p/r/f): (79.26/80.92/80.08)
+Training: 	Epoch: 31	Time: 10.2026	Training Loss: 0.0689	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 31	Time: 0.3450	Dev acc: 76.98	Dev fscore(p/r/f): (80.00/81.33/80.66)
+NEW BEST MODEL: 	Epoch: 31	Dev loss: 2.6719	Dev acc: 76.98	Dev fscore(p/r/f): (80.00/81.33/80.66)
+Training: 	Epoch: 32	Time: 9.6872	Training Loss: 0.0625	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 32	Time: 0.3420	Dev acc: 76.87	Dev fscore(p/r/f): (79.84/81.33/80.58)
+NEW BEST MODEL: 	Epoch: 32	Dev loss: 2.6961	Dev acc: 76.87	Dev fscore(p/r/f): (79.84/81.33/80.58)
+Training: 	Epoch: 33	Time: 9.7189	Training Loss: 0.0601	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 33	Time: 0.3778	Dev acc: 77.21	Dev fscore(p/r/f): (79.90/81.65/80.76)
+NEW BEST MODEL: 	Epoch: 33	Dev loss: 2.7591	Dev acc: 77.21	Dev fscore(p/r/f): (79.90/81.65/80.76)
+Training: 	Epoch: 34	Time: 10.1226	Training Loss: 0.0550	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 34	Time: 0.3610	Dev acc: 76.87	Dev fscore(p/r/f): (79.49/81.23/80.35)
+NEW BEST MODEL: 	Epoch: 34	Dev loss: 2.7151	Dev acc: 76.87	Dev fscore(p/r/f): (79.49/81.23/80.35)
+Training: 	Epoch: 35	Time: 10.2312	Training Loss: 0.0540	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 35	Time: 0.3441	Dev acc: 76.65	Dev fscore(p/r/f): (79.90/81.65/80.76)
+NEW BEST MODEL: 	Epoch: 35	Dev loss: 2.7472	Dev acc: 76.65	Dev fscore(p/r/f): (79.90/81.65/80.76)
+Training: 	Epoch: 36	Time: 9.7057	Training Loss: 0.0519	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 36	Time: 0.3380	Dev acc: 76.54	Dev fscore(p/r/f): (79.27/81.75/80.49)
+NEW BEST MODEL: 	Epoch: 36	Dev loss: 2.7414	Dev acc: 76.54	Dev fscore(p/r/f): (79.27/81.75/80.49)
+Training: 	Epoch: 37	Time: 10.2341	Training Loss: 0.0484	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 37	Time: 0.3764	Dev acc: 77.65	Dev fscore(p/r/f): (80.47/81.65/81.06)
+NEW BEST MODEL: 	Epoch: 37	Dev loss: 2.7465	Dev acc: 77.65	Dev fscore(p/r/f): (80.47/81.65/81.06)
+Training: 	Epoch: 38	Time: 9.6200	Training Loss: 0.0441	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 38	Time: 0.3665	Dev acc: 77.32	Dev fscore(p/r/f): (79.78/82.27/81.01)
+NEW BEST MODEL: 	Epoch: 38	Dev loss: 2.9218	Dev acc: 77.32	Dev fscore(p/r/f): (79.78/82.27/81.01)
+Training: 	Epoch: 39	Time: 10.2182	Training Loss: 0.0450	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 39	Time: 0.3541	Dev acc: 76.76	Dev fscore(p/r/f): (79.32/82.38/80.82)
+NEW BEST MODEL: 	Epoch: 39	Dev loss: 2.9896	Dev acc: 76.76	Dev fscore(p/r/f): (79.32/82.38/80.82)
+Training: 	Epoch: 40	Time: 10.0447	Training Loss: 0.0415	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 40	Time: 0.3480	Dev acc: 76.76	Dev fscore(p/r/f): (79.76/82.17/80.95)
+NEW BEST MODEL: 	Epoch: 40	Dev loss: 2.9616	Dev acc: 76.76	Dev fscore(p/r/f): (79.76/82.17/80.95)
+Training: 	Epoch: 41	Time: 9.9015	Training Loss: 0.0375	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 41	Time: 0.3369	Dev acc: 76.87	Dev fscore(p/r/f): (79.44/82.17/80.78)
+NEW BEST MODEL: 	Epoch: 41	Dev loss: 2.9476	Dev acc: 76.87	Dev fscore(p/r/f): (79.44/82.17/80.78)
+Training: 	Epoch: 42	Time: 9.1608	Training Loss: 0.0463	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 42	Time: 0.3356	Dev acc: 77.77	Dev fscore(p/r/f): (80.39/81.65/81.01)
+NEW BEST MODEL: 	Epoch: 42	Dev loss: 2.5195	Dev acc: 77.77	Dev fscore(p/r/f): (80.39/81.65/81.01)
+Training: 	Epoch: 43	Time: 9.8208	Training Loss: 0.0416	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 43	Time: 0.3355	Dev acc: 77.21	Dev fscore(p/r/f): (79.72/81.96/80.82)
+NEW BEST MODEL: 	Epoch: 43	Dev loss: 2.7581	Dev acc: 77.21	Dev fscore(p/r/f): (79.72/81.96/80.82)
+Training: 	Epoch: 44	Time: 9.7745	Training Loss: 0.0404	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 44	Time: 0.3408	Dev acc: 76.98	Dev fscore(p/r/f): (79.61/81.86/80.72)
+NEW BEST MODEL: 	Epoch: 44	Dev loss: 2.8754	Dev acc: 76.98	Dev fscore(p/r/f): (79.61/81.86/80.72)
+Training: 	Epoch: 45	Time: 10.2595	Training Loss: 0.0368	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 45	Time: 0.3375	Dev acc: 77.21	Dev fscore(p/r/f): (80.35/81.44/80.89)
+NEW BEST MODEL: 	Epoch: 45	Dev loss: 2.8182	Dev acc: 77.21	Dev fscore(p/r/f): (80.35/81.44/80.89)
+Training: 	Epoch: 46	Time: 9.8496	Training Loss: 0.0329	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 46	Time: 0.3446	Dev acc: 77.32	Dev fscore(p/r/f): (79.66/82.06/80.84)
+NEW BEST MODEL: 	Epoch: 46	Dev loss: 2.8464	Dev acc: 77.32	Dev fscore(p/r/f): (79.66/82.06/80.84)
+Training: 	Epoch: 47	Time: 9.8665	Training Loss: 0.0305	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 47	Time: 0.3358	Dev acc: 77.54	Dev fscore(p/r/f): (80.06/82.06/81.05)
+NEW BEST MODEL: 	Epoch: 47	Dev loss: 2.9294	Dev acc: 77.54	Dev fscore(p/r/f): (80.06/82.06/81.05)
+Training: 	Epoch: 48	Time: 9.4292	Training Loss: 0.0289	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 48	Time: 0.3405	Dev acc: 76.65	Dev fscore(p/r/f): (79.70/81.86/80.76)
+NEW BEST MODEL: 	Epoch: 48	Dev loss: 3.0455	Dev acc: 76.65	Dev fscore(p/r/f): (79.70/81.86/80.76)
+Training: 	Epoch: 49	Time: 9.2927	Training Loss: 0.0280	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 49	Time: 0.3385	Dev acc: 77.32	Dev fscore(p/r/f): (80.12/82.38/81.23)
+NEW BEST MODEL: 	Epoch: 49	Dev loss: 3.0983	Dev acc: 77.32	Dev fscore(p/r/f): (80.12/82.38/81.23)
+Training: 	Epoch: 50	Time: 9.6859	Training Loss: 0.0259	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 50	Time: 0.3386	Dev acc: 77.54	Dev fscore(p/r/f): (79.86/82.27/81.05)
+NEW BEST MODEL: 	Epoch: 50	Dev loss: 3.0294	Dev acc: 77.54	Dev fscore(p/r/f): (79.86/82.27/81.05)
+Training: 	Epoch: 51	Time: 10.2341	Training Loss: 0.0243	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 51	Time: 0.3697	Dev acc: 77.88	Dev fscore(p/r/f): (80.35/82.27/81.30)
+NEW BEST MODEL: 	Epoch: 51	Dev loss: 3.0553	Dev acc: 77.88	Dev fscore(p/r/f): (80.35/82.27/81.30)
+Training: 	Epoch: 52	Time: 10.1423	Training Loss: 0.0226	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 52	Time: 0.3419	Dev acc: 77.65	Dev fscore(p/r/f): (80.49/82.17/81.32)
+NEW BEST MODEL: 	Epoch: 52	Dev loss: 3.0603	Dev acc: 77.65	Dev fscore(p/r/f): (80.49/82.17/81.32)
+Training: 	Epoch: 53	Time: 9.6583	Training Loss: 0.0227	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 53	Time: 0.3741	Dev acc: 77.88	Dev fscore(p/r/f): (80.86/81.96/81.41)
+NEW BEST MODEL: 	Epoch: 53	Dev loss: 3.1085	Dev acc: 77.88	Dev fscore(p/r/f): (80.86/81.96/81.41)
+Training: 	Epoch: 54	Time: 10.0720	Training Loss: 0.0231	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 54	Time: 0.3369	Dev acc: 77.32	Dev fscore(p/r/f): (79.64/81.96/80.78)
+NEW BEST MODEL: 	Epoch: 54	Dev loss: 3.0903	Dev acc: 77.32	Dev fscore(p/r/f): (79.64/81.96/80.78)
+Training: 	Epoch: 55	Time: 10.1421	Training Loss: 0.0222	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 55	Time: 0.3488	Dev acc: 77.88	Dev fscore(p/r/f): (80.74/82.17/81.45)
+NEW BEST MODEL: 	Epoch: 55	Dev loss: 3.0691	Dev acc: 77.88	Dev fscore(p/r/f): (80.74/82.17/81.45)
+Training: 	Epoch: 56	Time: 10.6868	Training Loss: 0.0213	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 56	Time: 0.3764	Dev acc: 77.54	Dev fscore(p/r/f): (80.39/82.06/81.22)
+NEW BEST MODEL: 	Epoch: 56	Dev loss: 3.1362	Dev acc: 77.54	Dev fscore(p/r/f): (80.39/82.06/81.22)
+Training: 	Epoch: 57	Time: 10.2663	Training Loss: 0.0213	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 57	Time: 0.4436	Dev acc: 77.54	Dev fscore(p/r/f): (80.00/82.17/81.07)
+NEW BEST MODEL: 	Epoch: 57	Dev loss: 3.1795	Dev acc: 77.54	Dev fscore(p/r/f): (80.00/82.17/81.07)
+Training: 	Epoch: 58	Time: 9.9157	Training Loss: 0.0205	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 58	Time: 0.3457	Dev acc: 77.65	Dev fscore(p/r/f): (80.51/81.86/81.18)
+NEW BEST MODEL: 	Epoch: 58	Dev loss: 3.0519	Dev acc: 77.65	Dev fscore(p/r/f): (80.51/81.86/81.18)
+Training: 	Epoch: 59	Time: 10.3450	Training Loss: 0.0178	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 59	Time: 0.3627	Dev acc: 78.10	Dev fscore(p/r/f): (80.49/82.17/81.32)
+NEW BEST MODEL: 	Epoch: 59	Dev loss: 3.1670	Dev acc: 78.10	Dev fscore(p/r/f): (80.49/82.17/81.32)
+Training: 	Epoch: 60	Time: 10.3044	Training Loss: 0.0176	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 60	Time: 0.3790	Dev acc: 78.21	Dev fscore(p/r/f): (80.90/82.17/81.53)
+NEW BEST MODEL: 	Epoch: 60	Dev loss: 3.1315	Dev acc: 78.21	Dev fscore(p/r/f): (80.90/82.17/81.53)
+Training: 	Epoch: 61	Time: 10.0628	Training Loss: 0.0156	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 61	Time: 0.3373	Dev acc: 77.77	Dev fscore(p/r/f): (80.67/82.27/81.47)
+NEW BEST MODEL: 	Epoch: 61	Dev loss: 3.1742	Dev acc: 77.77	Dev fscore(p/r/f): (80.67/82.27/81.47)
+Training: 	Epoch: 62	Time: 9.8203	Training Loss: 0.0166	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 62	Time: 0.3452	Dev acc: 77.54	Dev fscore(p/r/f): (79.62/82.69/81.13)
+NEW BEST MODEL: 	Epoch: 62	Dev loss: 3.2986	Dev acc: 77.54	Dev fscore(p/r/f): (79.62/82.69/81.13)
+Training: 	Epoch: 63	Time: 10.0245	Training Loss: 0.0203	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 63	Time: 0.3791	Dev acc: 77.65	Dev fscore(p/r/f): (80.34/82.69/81.50)
+NEW BEST MODEL: 	Epoch: 63	Dev loss: 3.0258	Dev acc: 77.65	Dev fscore(p/r/f): (80.34/82.69/81.50)
+Training: 	Epoch: 64	Time: 10.2847	Training Loss: 0.0153	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 64	Time: 0.3455	Dev acc: 77.32	Dev fscore(p/r/f): (79.90/82.48/81.17)
+NEW BEST MODEL: 	Epoch: 64	Dev loss: 3.2756	Dev acc: 77.32	Dev fscore(p/r/f): (79.90/82.48/81.17)
+Training: 	Epoch: 65	Time: 9.9016	Training Loss: 0.0153	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 65	Time: 0.3370	Dev acc: 77.54	Dev fscore(p/r/f): (80.72/81.65/81.18)
+NEW BEST MODEL: 	Epoch: 65	Dev loss: 3.0510	Dev acc: 77.54	Dev fscore(p/r/f): (80.72/81.65/81.18)
+Training: 	Epoch: 66	Time: 10.3361	Training Loss: 0.0202	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 66	Time: 0.3381	Dev acc: 77.43	Dev fscore(p/r/f): (80.28/82.38/81.32)
+NEW BEST MODEL: 	Epoch: 66	Dev loss: 3.3500	Dev acc: 77.43	Dev fscore(p/r/f): (80.28/82.38/81.32)
+Training: 	Epoch: 67	Time: 10.0691	Training Loss: 0.0158	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 67	Time: 0.3750	Dev acc: 77.21	Dev fscore(p/r/f): (80.14/82.48/81.29)
+NEW BEST MODEL: 	Epoch: 67	Dev loss: 3.3166	Dev acc: 77.21	Dev fscore(p/r/f): (80.14/82.48/81.29)
+Training: 	Epoch: 68	Time: 10.2038	Training Loss: 0.0140	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 68	Time: 0.3752	Dev acc: 76.65	Dev fscore(p/r/f): (79.70/82.27/80.96)
+NEW BEST MODEL: 	Epoch: 68	Dev loss: 3.4328	Dev acc: 76.65	Dev fscore(p/r/f): (79.70/82.27/80.96)
+Training: 	Epoch: 69	Time: 10.0418	Training Loss: 0.0245	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 69	Time: 0.3520	Dev acc: 77.43	Dev fscore(p/r/f): (81.23/81.23/81.23)
+NEW BEST MODEL: 	Epoch: 69	Dev loss: 2.8911	Dev acc: 77.43	Dev fscore(p/r/f): (81.23/81.23/81.23)
+Training: 	Epoch: 70	Time: 10.1198	Training Loss: 0.0194	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 70	Time: 0.3410	Dev acc: 76.87	Dev fscore(p/r/f): (79.74/82.48/81.09)
+NEW BEST MODEL: 	Epoch: 70	Dev loss: 3.1760	Dev acc: 76.87	Dev fscore(p/r/f): (79.74/82.48/81.09)
+Training: 	Epoch: 71	Time: 9.8870	Training Loss: 0.0133	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 71	Time: 0.3388	Dev acc: 77.32	Dev fscore(p/r/f): (80.66/81.75/81.20)
+NEW BEST MODEL: 	Epoch: 71	Dev loss: 3.1016	Dev acc: 77.32	Dev fscore(p/r/f): (80.66/81.75/81.20)
+Training: 	Epoch: 72	Time: 10.1610	Training Loss: 0.0135	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 72	Time: 0.3491	Dev acc: 76.98	Dev fscore(p/r/f): (80.31/81.65/80.97)
+NEW BEST MODEL: 	Epoch: 72	Dev loss: 3.2660	Dev acc: 76.98	Dev fscore(p/r/f): (80.31/81.65/80.97)
+Training: 	Epoch: 73	Time: 10.4864	Training Loss: 0.0110	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 73	Time: 0.3714	Dev acc: 77.32	Dev fscore(p/r/f): (79.72/81.96/80.82)
+NEW BEST MODEL: 	Epoch: 73	Dev loss: 3.3399	Dev acc: 77.32	Dev fscore(p/r/f): (79.72/81.96/80.82)
+Training: 	Epoch: 74	Time: 10.0537	Training Loss: 0.0092	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 74	Time: 0.3524	Dev acc: 77.21	Dev fscore(p/r/f): (80.16/82.17/81.15)
+NEW BEST MODEL: 	Epoch: 74	Dev loss: 3.3509	Dev acc: 77.21	Dev fscore(p/r/f): (80.16/82.17/81.15)
+Training: 	Epoch: 75	Time: 10.4214	Training Loss: 0.0094	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 75	Time: 0.3847	Dev acc: 77.77	Dev fscore(p/r/f): (81.20/81.96/81.58)
+NEW BEST MODEL: 	Epoch: 75	Dev loss: 3.1921	Dev acc: 77.77	Dev fscore(p/r/f): (81.20/81.96/81.58)
+Training: 	Epoch: 76	Time: 10.1827	Training Loss: 0.0126	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 76	Time: 0.3463	Dev acc: 77.77	Dev fscore(p/r/f): (81.08/81.75/81.41)
+NEW BEST MODEL: 	Epoch: 76	Dev loss: 3.2748	Dev acc: 77.77	Dev fscore(p/r/f): (81.08/81.75/81.41)
+Training: 	Epoch: 77	Time: 9.8356	Training Loss: 0.0101	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 77	Time: 0.3414	Dev acc: 76.54	Dev fscore(p/r/f): (79.78/81.86/80.80)
+NEW BEST MODEL: 	Epoch: 77	Dev loss: 3.3852	Dev acc: 76.54	Dev fscore(p/r/f): (79.78/81.86/80.80)
+Training: 	Epoch: 78	Time: 10.1796	Training Loss: 0.0129	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 78	Time: 0.3414	Dev acc: 77.21	Dev fscore(p/r/f): (80.18/82.27/81.21)
+NEW BEST MODEL: 	Epoch: 78	Dev loss: 3.3279	Dev acc: 77.21	Dev fscore(p/r/f): (80.18/82.27/81.21)
+Training: 	Epoch: 79	Time: 10.2578	Training Loss: 0.0107	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 79	Time: 0.3756	Dev acc: 76.76	Dev fscore(p/r/f): (79.22/82.27/80.72)
+NEW BEST MODEL: 	Epoch: 79	Dev loss: 3.5363	Dev acc: 76.76	Dev fscore(p/r/f): (79.22/82.27/80.72)
+Training: 	Epoch: 80	Time: 10.0786	Training Loss: 0.0095	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 80	Time: 0.3664	Dev acc: 77.54	Dev fscore(p/r/f): (80.79/81.54/81.16)
+NEW BEST MODEL: 	Epoch: 80	Dev loss: 3.3320	Dev acc: 77.54	Dev fscore(p/r/f): (80.79/81.54/81.16)
+Training: 	Epoch: 81	Time: 10.1128	Training Loss: 0.0092	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 81	Time: 0.3482	Dev acc: 77.65	Dev fscore(p/r/f): (80.59/82.27/81.42)
+NEW BEST MODEL: 	Epoch: 81	Dev loss: 3.3893	Dev acc: 77.65	Dev fscore(p/r/f): (80.59/82.27/81.42)
+Training: 	Epoch: 82	Time: 10.0616	Training Loss: 0.0100	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 82	Time: 0.3743	Dev acc: 76.42	Dev fscore(p/r/f): (79.33/81.65/80.47)
+NEW BEST MODEL: 	Epoch: 82	Dev loss: 3.4801	Dev acc: 76.42	Dev fscore(p/r/f): (79.33/81.65/80.47)
+Training: 	Epoch: 83	Time: 9.8499	Training Loss: 0.0110	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 83	Time: 0.3466	Dev acc: 77.09	Dev fscore(p/r/f): (79.74/81.65/80.68)
+NEW BEST MODEL: 	Epoch: 83	Dev loss: 3.6814	Dev acc: 77.09	Dev fscore(p/r/f): (79.74/81.65/80.68)
+Training: 	Epoch: 84	Time: 10.0039	Training Loss: 0.0142	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 84	Time: 0.3413	Dev acc: 78.10	Dev fscore(p/r/f): (81.76/81.33/81.55)
+NEW BEST MODEL: 	Epoch: 84	Dev loss: 3.1740	Dev acc: 78.10	Dev fscore(p/r/f): (81.76/81.33/81.55)
+Training: 	Epoch: 85	Time: 9.8078	Training Loss: 0.0127	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 85	Time: 0.3410	Dev acc: 76.87	Dev fscore(p/r/f): (79.86/82.27/81.05)
+NEW BEST MODEL: 	Epoch: 85	Dev loss: 3.5486	Dev acc: 76.87	Dev fscore(p/r/f): (79.86/82.27/81.05)
+Training: 	Epoch: 86	Time: 10.2287	Training Loss: 0.0106	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 86	Time: 0.3377	Dev acc: 77.21	Dev fscore(p/r/f): (79.60/82.17/80.86)
+NEW BEST MODEL: 	Epoch: 86	Dev loss: 3.5185	Dev acc: 77.21	Dev fscore(p/r/f): (79.60/82.17/80.86)
+Training: 	Epoch: 87	Time: 10.0343	Training Loss: 0.0068	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 87	Time: 0.3411	Dev acc: 76.98	Dev fscore(p/r/f): (79.61/81.86/80.72)
+NEW BEST MODEL: 	Epoch: 87	Dev loss: 3.6017	Dev acc: 76.98	Dev fscore(p/r/f): (79.61/81.86/80.72)
+Training: 	Epoch: 88	Time: 9.9937	Training Loss: 0.0057	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 88	Time: 0.3411	Dev acc: 76.65	Dev fscore(p/r/f): (79.21/81.86/80.51)
+NEW BEST MODEL: 	Epoch: 88	Dev loss: 3.6125	Dev acc: 76.65	Dev fscore(p/r/f): (79.21/81.86/80.51)
+Training: 	Epoch: 89	Time: 9.5640	Training Loss: 0.0088	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 89	Time: 0.3393	Dev acc: 77.09	Dev fscore(p/r/f): (79.70/81.86/80.76)
+NEW BEST MODEL: 	Epoch: 89	Dev loss: 3.5877	Dev acc: 77.09	Dev fscore(p/r/f): (79.70/81.86/80.76)
+Training: 	Epoch: 90	Time: 9.9783	Training Loss: 0.0056	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 90	Time: 0.3486	Dev acc: 76.76	Dev fscore(p/r/f): (78.52/81.96/80.20)
+NEW BEST MODEL: 	Epoch: 90	Dev loss: 3.7433	Dev acc: 76.76	Dev fscore(p/r/f): (78.52/81.96/80.20)
+Training: 	Epoch: 91	Time: 10.2620	Training Loss: 0.0064	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 91	Time: 0.3384	Dev acc: 77.43	Dev fscore(p/r/f): (80.08/81.75/80.91)
+NEW BEST MODEL: 	Epoch: 91	Dev loss: 3.3872	Dev acc: 77.43	Dev fscore(p/r/f): (80.08/81.75/80.91)
+Training: 	Epoch: 92	Time: 9.8461	Training Loss: 0.0076	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 92	Time: 0.3527	Dev acc: 77.54	Dev fscore(p/r/f): (80.12/81.96/81.03)
+NEW BEST MODEL: 	Epoch: 92	Dev loss: 3.5528	Dev acc: 77.54	Dev fscore(p/r/f): (80.12/81.96/81.03)
+Training: 	Epoch: 93	Time: 10.2404	Training Loss: 0.0053	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 93	Time: 0.3415	Dev acc: 76.87	Dev fscore(p/r/f): (79.32/82.38/80.82)
+NEW BEST MODEL: 	Epoch: 93	Dev loss: 3.6280	Dev acc: 76.87	Dev fscore(p/r/f): (79.32/82.38/80.82)
+Training: 	Epoch: 94	Time: 10.0762	Training Loss: 0.0058	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 94	Time: 0.3404	Dev acc: 76.87	Dev fscore(p/r/f): (79.52/82.17/80.82)
+NEW BEST MODEL: 	Epoch: 94	Dev loss: 3.6881	Dev acc: 76.87	Dev fscore(p/r/f): (79.52/82.17/80.82)
+Training: 	Epoch: 95	Time: 9.5605	Training Loss: 0.0054	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 95	Time: 0.3413	Dev acc: 77.32	Dev fscore(p/r/f): (79.88/82.79/81.31)
+NEW BEST MODEL: 	Epoch: 95	Dev loss: 3.7859	Dev acc: 77.32	Dev fscore(p/r/f): (79.88/82.79/81.31)
+Training: 	Epoch: 96	Time: 9.9790	Training Loss: 0.0083	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 96	Time: 0.3418	Dev acc: 77.32	Dev fscore(p/r/f): (79.86/82.69/81.25)
+NEW BEST MODEL: 	Epoch: 96	Dev loss: 3.7448	Dev acc: 77.32	Dev fscore(p/r/f): (79.86/82.69/81.25)
+Training: 	Epoch: 97	Time: 9.9958	Training Loss: 0.0189	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 97	Time: 0.3764	Dev acc: 77.09	Dev fscore(p/r/f): (80.23/81.65/80.93)
+NEW BEST MODEL: 	Epoch: 97	Dev loss: 3.0497	Dev acc: 77.09	Dev fscore(p/r/f): (80.23/81.65/80.93)
+Training: 	Epoch: 98	Time: 9.8144	Training Loss: 0.0148	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 98	Time: 0.3498	Dev acc: 77.77	Dev fscore(p/r/f): (80.28/82.38/81.32)
+NEW BEST MODEL: 	Epoch: 98	Dev loss: 3.3886	Dev acc: 77.77	Dev fscore(p/r/f): (80.28/82.38/81.32)
+Training: 	Epoch: 99	Time: 10.1798	Training Loss: 0.0110	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 99	Time: 0.3548	Dev acc: 77.32	Dev fscore(p/r/f): (80.08/82.17/81.11)
+NEW BEST MODEL: 	Epoch: 99	Dev loss: 3.5748	Dev acc: 77.32	Dev fscore(p/r/f): (80.08/82.17/81.11)
+FINAL BEST RESULT: 	Epoch: 60	Dev loss: 3.1315	Dev acc: 78.2123	Dev fscore(p/r/f): (80.9035/82.1689/81.5313)
