@@ -1,7 +1,0 @@
-Use pretrained model: hfl/chinese-pert-base
-Dataset size: train -> 5119
-Load dataset and database finished, cost 4.9819s ...
-Dataset size: dev -> 895
-Total training steps: 16000
-Start training ......
-Training: 	Epoch: 0	Time: 9.2390	Training Loss: 4.2683	Sep Loss: 0.0000	Tag Loss: 0.0000

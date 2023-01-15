@@ -48,6 +48,7 @@ bash shell-scripts/main.sh
 - `utils/word2vec.py`: 读取词向量
 
 # 测试
+由于我们的模型大于1个G,因此我们将模型放到了jbox上，路径是https://jbox.sjtu.edu.cn/l/w1Nzt6
 ```bash
 python scripts/slu_bert.py --device <device> --testing
 ```

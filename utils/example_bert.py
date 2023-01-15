@@ -83,14 +83,14 @@ class Example():
 
         ### v1 ###  #78.324
 
-        self.utt=self.utt.replace(" ","_")
+        # self.utt=self.utt.replace(" ","_")
 
-        non_chinese = re.findall(r'[^\u4e00-\u9fff]', self.utt)
-        # Insert a space before each non-Chinese character
-        for c in non_chinese:
-            self.utt = self.utt.replace(c, " " + c)
+        # non_chinese = re.findall(r'[^\u4e00-\u9fff]', self.utt)
+        # # Insert a space before each non-Chinese character
+        # for c in non_chinese:
+        #     self.utt = self.utt.replace(c, " " + c)
         
-        self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
+        # self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
         # print(self.utt,self.input_idx) #bert tokenizer will pad <sos> and <eos>
 
         ### v1 ###
@@ -128,30 +128,30 @@ class Example():
         ### v2 ###
         
         ### v3 ### 78.44
-        # self.utt_ori = self.utt
-        # self.utt = self.utt.replace(" ","_").replace("～","~")
-        # self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
+        self.utt_ori = self.utt
+        self.utt = self.utt.replace(" ","_").replace("～","~")
+        self.input_idx = Example.tokenizer(self.utt)["input_ids"][1:-1]
 
-        # # 对英文分词的处理 （逐字符与逐单词不符）
-        # words = set(re.findall(r'[a-zA-Z0-9]+', self.utt))
-        # for word in words:
-        #     # print(word)
-        #     word_token_ori=Example.tokenizer(word)["input_ids"][1:-1]
-        #     word_token=[]
-        #     while len(word_token) < len(word):
-        #         word_token = word_token + word_token_ori #c重复当前token，补齐至与word一样长
-        #     if len(word_token) > len(word):
-        #         word_token=word_token[0:len(word)]
+        # 对英文分词的处理 （逐字符与逐单词不符）
+        words = set(re.findall(r'[a-zA-Z0-9]+', self.utt))
+        for word in words:
+            # print(word)
+            word_token_ori=Example.tokenizer(word)["input_ids"][1:-1]
+            word_token=[]
+            while len(word_token) < len(word):
+                word_token = word_token + word_token_ori #c重复当前token，补齐至与word一样长
+            if len(word_token) > len(word):
+                word_token=word_token[0:len(word)]
 
-        #     # bidx = self.utt.find(word)
-        #     # eidx = bidx + len(word)
-        #     # self.input_idx = self.input_idx[]
-        #     i = 0
-        #     while i < (len(self.input_idx) - len(word_token_ori) + 1):
-        #         if self.input_idx[i:i+len(word_token_ori)] == word_token_ori:
-        #             self.input_idx[i:i+len(word_token_ori)] = word_token
-        #             i+=len(word)-1
-        #         i+=1
+            # bidx = self.utt.find(word)
+            # eidx = bidx + len(word)
+            # self.input_idx = self.input_idx[]
+            i = 0
+            while i < (len(self.input_idx) - len(word_token_ori) + 1):
+                if self.input_idx[i:i+len(word_token_ori)] == word_token_ori:
+                    self.input_idx[i:i+len(word_token_ori)] = word_token
+                    i+=len(word)-1
+                i+=1
 
 
         # ### v3 ###

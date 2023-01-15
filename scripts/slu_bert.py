@@ -94,7 +94,7 @@ if not args.testing:
     train_dataset = Example.load_dataset(train_path, train_path_cais, train_path_ecdt, use_asr=args.use_asr)
     logger.info(f"Dataset size: train -> {len(train_dataset)}")
 
-dev_dataset = Example.load_dataset(dev_path, dev_path_cais, dev_path_ecdt, use_asr=True)
+dev_dataset = Example.load_dataset(dev_path, use_asr=True)
 logger.info("Load dataset and database finished, cost %.4fs ..." % (time.time() - start_time))
 logger.info(f"Dataset size: dev -> {len(dev_dataset)}")
 
