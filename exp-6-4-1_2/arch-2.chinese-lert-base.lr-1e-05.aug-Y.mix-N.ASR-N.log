@@ -64,3 +64,6 @@ NEW BEST MODEL: 	Epoch: 18	Dev loss: 4.7960	Dev acc: 76.54	Dev fscore(p/r/f): (7
 Training: 	Epoch: 19	Time: 189.5058	Training Loss: 0.0021	Sep Loss: 0.0000	Tag Loss: 0.0000
 Evaluation: 	Epoch: 19	Time: 0.3668	Dev acc: 77.54	Dev fscore(p/r/f): (79.96/83.21/81.55)
 NEW BEST MODEL: 	Epoch: 19	Dev loss: 4.4949	Dev acc: 77.54	Dev fscore(p/r/f): (79.96/83.21/81.55)
+Training: 	Epoch: 20	Time: 180.4458	Training Loss: 0.0019	Sep Loss: 0.0000	Tag Loss: 0.0000
+Evaluation: 	Epoch: 20	Time: 0.3703	Dev acc: 76.87	Dev fscore(p/r/f): (79.29/83.42/81.30)
+NEW BEST MODEL: 	Epoch: 20	Dev loss: 4.6572	Dev acc: 76.87	Dev fscore(p/r/f): (79.29/83.42/81.30)
