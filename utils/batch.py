@@ -3,7 +3,8 @@ import torch
 
 
 def from_example_list(args, ex_list, device='cpu', train=True):
-    ex_list = sorted(ex_list, key=lambda x: len(x.input_idx), reverse=True)
+    if train:
+        ex_list = sorted(ex_list, key=lambda x: len(x.input_idx), reverse=True)
     batch = Batch(ex_list, device)
     pad_idx = args.pad_idx
     tag_pad_idx = args.tag_pad_idx
@@ -14,6 +15,10 @@ def from_example_list(args, ex_list, device='cpu', train=True):
     input_ids = [ex.input_idx + [pad_idx] * (max_len - len(ex.input_idx)) for ex in ex_list]
     batch.input_ids = torch.tensor(input_ids, dtype=torch.long, device=device)
     batch.lengths = input_lens
+
+    batch.labels, batch.tag_ids, batch.sep_tag_ids = None, None, None
+    batch.act_ids, batch.slot_ids,  = None, None
+    batch.tag_mask = torch.tensor([[1] * max_len for _ in range(len(ex_list))], device=device)
 
     if train:
         batch.labels = [ex.slotvalue for ex in ex_list]
@@ -31,10 +36,6 @@ def from_example_list(args, ex_list, device='cpu', train=True):
         batch.slot_ids = torch.tensor(slot_ids, dtype=torch.long, device=device)
         batch.sep_tag_ids= torch.tensor(sep_tag_ids, dtype=torch.long, device=device)
         batch.tag_mask = torch.tensor(tag_mask, dtype=torch.float, device=device)
-    else:
-        batch.labels = None
-        batch.tag_ids = None
-        batch.tag_mask = None
 
     return batch
 
