@@ -1,1 +1,5 @@
 *.bin
+word2vec-768.txt
+__pycache__
+exp
+train_augment.json

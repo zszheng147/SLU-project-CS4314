@@ -14,6 +14,8 @@ class Evaluator():
         for i, pred in enumerate(predictions):
             total += 1
             corr += set(pred) == set(labels[i])
+            # if set(pred)!=set(labels[i]):
+            #     print(set(pred),set(labels[i]))
         return 100 * corr / total
 
     @staticmethod

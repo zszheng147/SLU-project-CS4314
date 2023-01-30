@@ -34,3 +34,4 @@ class Word2vecUtils():
                 word = items[0]
                 vector = np.fromstring(' '.join(items[1:]), dtype=float, sep=' ')
                 self.word2vec[word] = vector
+                #? 这里的word --> idx 映射没有考虑word的上下文信息？ 或者说一个词只能对应一个词向量

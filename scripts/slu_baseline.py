@@ -1,5 +1,5 @@
 #coding=utf8
-import sys, os, time, gc
+import sys, os, time
 from torch.optim import Adam
 
 install_path = os.path.abspath(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

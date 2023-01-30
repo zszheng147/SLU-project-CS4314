@@ -11,7 +11,9 @@ class SLUTagging(nn.Module):
         self.config = config
         self.cell = config.encoder_cell
         self.word_embed = nn.Embedding(config.vocab_size, config.embed_size, padding_idx=0)
+        # self.fc = nn.Linear(config.vocab_embed_size, config.embed_size)
         self.rnn = getattr(nn, self.cell)(config.embed_size, config.hidden_size // 2, num_layers=config.num_layer, bidirectional=True, batch_first=True)
+        # self.transformer = nn.TransformerEncoder #!
         self.dropout_layer = nn.Dropout(p=config.dropout)
         self.output_layer = TaggingFNNDecoder(config.hidden_size, config.num_tags, config.tag_pad_idx)
 
@@ -21,29 +23,32 @@ class SLUTagging(nn.Module):
         input_ids = batch.input_ids
         lengths = batch.lengths
 
-        embed = self.word_embed(input_ids)
+        # embed = nn.Dropout(0.05)(self.fc(self.word_embed(input_ids)))
+        embed = self.word_embed(input_ids) 
+        # print(embed.shape,"embed shape")
         packed_inputs = rnn_utils.pack_padded_sequence(embed, lengths, batch_first=True, enforce_sorted=True)
         packed_rnn_out, h_t_c_t = self.rnn(packed_inputs)  # bsize x seqlen x dim
         rnn_out, unpacked_len = rnn_utils.pad_packed_sequence(packed_rnn_out, batch_first=True)
         hiddens = self.dropout_layer(rnn_out)
+        print(hiddens.shape,"hiddens") #(32 47 512)
         tag_output = self.output_layer(hiddens, tag_mask, tag_ids)
-
+        # print(tag_output.shape,"tagout")
         return tag_output
 
     def decode(self, label_vocab, batch):
         batch_size = len(batch)
         labels = batch.labels
-        prob, loss = self.forward(batch)
+        prob, loss = self.forward(batch) # bsz * seqlen * [BIO]
         predictions = []
         for i in range(batch_size):
-            pred = torch.argmax(prob[i], dim=-1).cpu().tolist()
+            pred = torch.argmax(prob[i], dim=-1).cpu().tolist() # 预测的类型 [BIO]
             pred_tuple = []
             idx_buff, tag_buff, pred_tags = [], [], []
             pred = pred[:len(batch.utt[i])]
             for idx, tid in enumerate(pred):
                 tag = label_vocab.convert_idx_to_tag(tid)
                 pred_tags.append(tag)
-                if (tag == 'O' or tag.startswith('B')) and len(tag_buff) > 0:
+                if (tag == 'O' or tag.startswith('B')) and len(tag_buff) > 0: # 一组BI结束了
                     slot = '-'.join(tag_buff[0].split('-')[1:])
                     value = ''.join([batch.utt[i][j] for j in idx_buff])
                     idx_buff, tag_buff = [], []
@@ -63,7 +68,7 @@ class SLUTagging(nn.Module):
 
 
 class TaggingFNNDecoder(nn.Module):
-
+    # 线性层输出 算交叉熵
     def __init__(self, input_size, num_tags, pad_id):
         super(TaggingFNNDecoder, self).__init__()
         self.num_tags = num_tags
